@@ -1,0 +1,31 @@
+section.ServiceSection{
+    bottom: 10%;
+    position: absolute;
+    width: 100%;
+}
+
+ul.Services{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.ServiciosRes{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border: 10px;
+}
+
+.ServiciosRes h2{
+    text-align: center;
+}
+
+.ServiciosRes ul{
+    align-items: center;
+    padding: 0px;
+}
+
+.ServiciosRes li{
+    list-style: square;
+}

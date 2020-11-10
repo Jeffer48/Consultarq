@@ -1,0 +1,45 @@
+/*---------------------------------------------NUESTROS SERVICIOS------------------------------------*/
+section.OurServicesSection {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+    
+h1.OurServicesTitle{
+    text-align: center;
+    color: white;
+    font-size: 300%;
+}
+
+ul.OurServices {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.NServicio {
+    color: white;
+    padding: 50px;
+    border: 10px;
+    text-align: justify;
+}
+
+.NServicio h4 {
+    text-align: center;
+}
+
+img.NSImg {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 745px) {
+    section.OurServicesSection {
+        top: 20%;
+    }
+    
+    #Fondo{
+        height: 130%;
+    }
+}

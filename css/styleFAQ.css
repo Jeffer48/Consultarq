@@ -1,0 +1,39 @@
+h1{
+    font-size: 650%;
+}
+
+section{
+    bottom: 0%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 85%;
+}
+
+.accordion{
+    bottom: 20%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: black;
+}
+
+.card-header {
+    background-color: #1c1c36;
+}
+
+.card-body {    
+    color: white;
+    background-color: #52515c8e;
+    padding: 10px;
+    border: 10px;
+    
+}
+
+.preguntasCaja{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px;
+    column-gap: 0px;
+}

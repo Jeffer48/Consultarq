@@ -1,5 +1,5 @@
 section.ServiceSection{
-    bottom: 10%;
+    top: 55%;
     position: absolute;
     width: 100%;
 }
@@ -8,6 +8,7 @@ ul.Services{
     display: flex;
     justify-content: space-around;
     padding: 0px;
+    flex-wrap: wrap;
 }
 
 .ServiciosRes{
@@ -15,6 +16,9 @@ ul.Services{
     background-color: rgba(0,0,0,0.5);
     padding: 30px;
     border: 10px;
+    height: 25vh;
+    width: 40vh;
+    margin: 2vh;
 }
 
 .ServiciosRes h2{

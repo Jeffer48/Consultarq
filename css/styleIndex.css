@@ -33,3 +33,7 @@ ul.Services{
 .ServiciosRes li{
     list-style: square;
 }
+
+@media screen and (max-width: 1420px){
+    .ServiciosRes h2{
+        margin: auto;

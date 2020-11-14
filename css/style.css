@@ -78,8 +78,17 @@ ul.redes{
 }
 
 @media screen and (max-width: 800px){
+    header{
+        z-index: 2;
+    }
+    
+    #Fondo{
+        
+    }
+    
     nav{
         visibility: collapse;
+        width: 100%;
     }
     
     ul.paginas{
@@ -103,6 +112,7 @@ ul.redes{
     #hamburguer-menu{
         visibility: visible;
         height: 13vh;
+        justify-content: normal;
     }
     
     #btn-hamburguer{
@@ -112,5 +122,15 @@ ul.redes{
     #logo{
         height: 10vh;
         margin: 1.5vh;
+    }
+}
+
+@media screen and (max-width: 460px){
+    #logo{
+        width: 30vh;
+    }
+    
+    header{
+        width: auto;
     }
 }

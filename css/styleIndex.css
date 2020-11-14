@@ -34,6 +34,8 @@ ul.Services{
     list-style: square;
 }
 
-@media screen and (max-width: 1420px){
+@media screen and (max-width: 800px){
     .ServiciosRes h2{
         margin: auto;
+    }
+}

@@ -39,3 +39,9 @@ ul.Services{
         margin: auto;
     }
 }
+
+@media screen and (max-width: 460px){
+    section.ServiceSection{
+        width: auto;
+    }
+}

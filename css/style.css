@@ -63,10 +63,3 @@ ul.redes{
     margin-right: 20px;
     padding-left: 10px;
 }
-
-@media screen and (max-width: 900px){
-    #Fondo{
-        height: 100%;
-        position: fixed;
-    } 
-}

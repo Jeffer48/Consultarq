@@ -116,7 +116,13 @@ ul.redes{
     }
     
     #btn-hamburguer{
-        width: 10vh;
+        width: 9vh;
+        height: 9vh;
+    }
+    
+    #btn-hamburguer:active{
+        transform: scale(.97);
+        transition: transform .3s;
     }
     
     #logo{

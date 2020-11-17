@@ -1,11 +1,20 @@
 /*---------------------------------------------NUESTROS SERVICIOS------------------------------------*/
+
+html {
+    background: url('../img/NuestrosServicios/fondo-04.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 section.OurServicesSection {
     position: absolute;
     width: 100%;
     top: 10%;
 }
-    
-h1.OurServicesTitle{
+
+h1.OurServicesTitle {
     text-align: center;
     color: white;
     font-size: 300%;
@@ -38,8 +47,7 @@ img.NSImg {
     section.OurServicesSection {
         top: 20%;
     }
-    
-    #Fondo{
+    #Fondo {
         height: 130%;
     }
 }

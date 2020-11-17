@@ -6,9 +6,6 @@
 
 body {
     background-color: #000f27;
-    align-content: center;
-    align-items: center;
-    align-self: center;
 }
 
 .Vision,
@@ -34,6 +31,10 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+
+/*el primer div que contiene
+los textos del documento*/
 
 #capa1 {
     position: absolute;

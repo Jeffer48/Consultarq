@@ -11,7 +11,7 @@ html {
 section.OurServicesSection {
     position: absolute;
     width: 100%;
-    top: 6%;
+    top: 7%;
 }
 
 h1.OurServicesTitle {
@@ -54,26 +54,84 @@ img.NSImg {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
 
     header {
         width: 100vh;
     }
 
-    h1 {
-        font-size: 300%;
-        width: 100%;
+    ul.OurServices {
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .NServicio {
+        font-size: 150%;
+    }
+}
+@media screen and (max-width: 550px) {
+
+    header {
+        width: 100vh;
+    }
+
+    h1.OurServicesTitle {
+        width: 130%;
     }
 
     ul.OurServices {
-        width: 100%;
+        width: 130%;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        width: max-content;
         font-size: 150%;
     }
+}
+
+@media screen and (max-width: 450px) {
+
+    header {
+        width: 100vh;
+    }
+
+    h1.OurServicesTitle {
+        width: 178%;
+    }
+
+    ul.OurServices {
+        width: 178%;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .NServicio {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        width: 100vh;
+    }
+
+    h1.OurServicesTitle {
+        width: 230%;
+    }
+
+    ul.OurServices {
+        width: 230%;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .NServicio {
+        font-size: 150%;
+    }
+
 }

@@ -15,7 +15,7 @@ header {
 }
 
 
-/*
+/* se comenta por que ya no la ocupamos
 #Fondo {
     position: fixed;
     z-index: 0;
@@ -70,6 +70,7 @@ ul.redes {
 }
 
 #hamburguer-menu {
+    /*lo quitamos para que la imagen se acomode*/
     /*position: absolute;*/
     visibility: collapse;
     width: 0px;
@@ -135,6 +136,9 @@ ul.redes {
         /*width: auto;*/
     }
 }
+
+
+/*para que el logo no se desborde del menu*/
 
 @media screen and (max-width: 443px) {
     #logo {

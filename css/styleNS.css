@@ -54,19 +54,19 @@ img.NSImg {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
     header {
         width: 100vh;
     }
 
     h1 {
-        font-size: 400%;
-        width: 260%;
+        font-size: 300%;
+        width: 100%;
     }
 
     ul.OurServices {
-        width: 250%;
+        width: 100%;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
@@ -74,6 +74,6 @@ img.NSImg {
 
     .NServicio {
         width: max-content;
-        font-size: 200%;
+        font-size: 150%;
     }
 }

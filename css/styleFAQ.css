@@ -18,9 +18,6 @@ h1 {
 }
 
 
-h1 {
-    font-size: 500%;
-}
 
 html {
     background: url('../img/Preguntas frecuentes/fondo-03.png') no-repeat center center fixed;
@@ -58,19 +55,12 @@ section {
     background-color: #52515c8e;
     padding: 10px;
     border: 10px;
-
     font-size: 25px;
-
 }
 
 .preguntasCaja {
     display: flex;
     flex-direction: column;
-
-}
-
-.preguntasCaja {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 70px;

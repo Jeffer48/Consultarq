@@ -9,7 +9,7 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 #Titulo {
@@ -21,7 +21,7 @@ html {
 .Titulo {
     text-align: center;
     color: white;
-    font-size: 250%;
+    font-size: 500%;
     margin: 0px;
     width: 100%;
     top: 2%;

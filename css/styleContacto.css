@@ -1,5 +1,5 @@
 h1 {
-    font-size: 650%;
+    font-size: 100px;
     margin: 5vh;
 }
 
@@ -59,4 +59,17 @@ textarea::placeholder{
 
 .msg{
     width: 92%;
+}
+
+@media screen and (max-width: 750px){
+    form ul{
+        width: 90%;
+        margin: 0% 5%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    form ul{
+        display: grid;
+    }
 }

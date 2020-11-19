@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 * {
@@ -17,7 +17,7 @@ h1 {
     font-size: 650%;
 }
 
-=======
+
 h1 {
     font-size: 500%;
 }
@@ -30,7 +30,7 @@ html {
     background-size: 100% 100%;
 }
 
->>>>>>> f59b5a00e9d450bae7dff3b7cd7ceb77104023ce
+
 section {
     bottom: 0%;
     color: white;
@@ -58,7 +58,7 @@ section {
     background-color: #52515c8e;
     padding: 10px;
     border: 10px;
-<<<<<<< HEAD
+
     font-size: 25px;
 
 }
@@ -66,11 +66,11 @@ section {
 .preguntasCaja {
     display: flex;
     flex-direction: column;
-=======
+
 }
 
 .preguntasCaja {
->>>>>>> f59b5a00e9d450bae7dff3b7cd7ceb77104023ce
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 70px;

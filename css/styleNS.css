@@ -88,25 +88,21 @@ img.NSImg {
 }
 
 @media screen and (max-width: 450px) {
- 
    h1.OurServicesTitle {
         width:fit-content;
         font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-<<<<<<< HEAD
         width:fit-content;
-=======
         width: fit-content;
->>>>>>> 7321cbeca68f9878bca5c1b5b64e85d697f55448
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size:larger;
+        font-size:large;
     }
 }
 
@@ -123,3 +119,7 @@ img.NSImg {
         display: flex;
         flex-wrap: wrap;
     }
+     .NServicio {
+        font-size:medium;
+    }
+}

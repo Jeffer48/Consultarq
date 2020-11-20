@@ -13,10 +13,6 @@ body {
 }
 
 h1 {
-    font-size: 650%;
-}
-
-h1 {
     font-size: 500%;
 }
 
@@ -68,6 +64,7 @@ section {
     grid-template-columns: 1fr 1fr;
     margin-top: 70px;
     column-gap: 0px;
+     text-align: justify;
 }
 
 @media screen and (max-width: 1242px) {
@@ -107,6 +104,7 @@ section {
         margin-top: 50px;
         margin-bottom: 50px;
         column-gap: 20px;
+        
     }
 }
 

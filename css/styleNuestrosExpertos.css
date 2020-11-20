@@ -41,9 +41,10 @@ html {
 }
 
 #IngenieroCivilh3 {
-    margin-right: 70%;
+    margin-right: 77%;
     margin-bottom: 0px;
     font-size: 150%;
+    text-align: center;
 }
 
 #IngenieroCivilp {
@@ -51,6 +52,7 @@ html {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 120%;
+    text-align: justify;
 }
 
 
@@ -72,6 +74,7 @@ html {
     margin-right: 2%;
     margin-bottom: 0px;
     font-size: 150%;
+    text-align: center;
 }
 
 #IngenieriaEstructuralp {
@@ -80,6 +83,7 @@ html {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 120%;
+    text-align: justify;
 }
 
 
@@ -96,9 +100,10 @@ html {
 }
 
 #Arquitectoh3 {
-    margin-right: 70%;
+    margin-right: 77%;
     margin-bottom: 0px;
     font-size: 150%;
+    text-align: center;
 }
 
 #Arquitectop {
@@ -106,6 +111,7 @@ html {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 120%;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1230px) {

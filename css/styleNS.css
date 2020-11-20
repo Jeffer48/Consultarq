@@ -54,84 +54,54 @@ img.NSImg {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
 
-    header {
-        width: 100vh;
+   h1.OurServicesTitle {
+        width:fit-content;
+        font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .NServicio {
-        font-size: 150%;
-    }
-}
-@media screen and (max-width: 550px) {
-
-    header {
-        width: 100vh;
-    }
-
-    h1.OurServicesTitle {
-        width: 130%;
-    }
-
-    ul.OurServices {
-        width: 130%;
+        width:fit-content;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size: 150%;
+        font-size:larger;
     }
 }
 
 @media screen and (max-width: 450px) {
-
-    header {
-        width: 100vh;
-    }
-
-    h1.OurServicesTitle {
-        width: 178%;
+ 
+   h1.OurServicesTitle {
+        width:fit-content;
+        font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-        width: 178%;
+        width:fit-content;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size: 150%;
+        font-size:larger;
     }
 }
 
 @media screen and (max-width: 300px) {
-    header {
-        width: 100vh;
-    }
-
+    
     h1.OurServicesTitle {
-        width: 230%;
+        width: fit-content;
+        font-size: -webkit-xxx-large;
     }
 
     ul.OurServices {
-        width: 230%;
-        margin: 0px;
+        width: fit-content;
+        margin: 0%;
         display: flex;
         flex-wrap: wrap;
     }
-
-    .NServicio {
-        font-size: 150%;
-    }
-
-}

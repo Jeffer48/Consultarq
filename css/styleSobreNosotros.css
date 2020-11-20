@@ -17,7 +17,7 @@ body {
 
 .Titulo {
     color: white;
-    font-size: 300%;
+    font-size: 500%;
 }
 
 .mapa,
@@ -39,17 +39,20 @@ los textos del documento*/
 #capa1 {
     position: absolute;
     z-index: 1;
-    top: 250px;
+    /*separacion del la parte superior de la pagina al contenedor de los textos*/
+    top: 330px;
+    /*separacion del la parte izquierda de la pagina al contenedor de los textos*/
     left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*tamano del contenedor*/
     width: 40%;
     height: 80%;
 }
 
 #TituloValores {
-    margin: 12% 0% 0% 0%;
+    margin: 13% 0% 0% 0%;
     font-size: 99%;
 }
 
@@ -69,22 +72,44 @@ los textos del documento*/
     font-size: 79%;
 }
 
-@media screen and (max-width: 1242px) {
+@media screen and (max-width: 1197px) {
     #capa1 {
-        top: 300px;
-        left: 50%;
+        top: 371px;
     }
     #TituloValores {
-        margin: 30% 0% 0% 0%;
+        margin: 24% 0% 0% 0%;
         font-size: 90%;
     }
     #TituloVision {
-        margin: 55% 0% 0% 0%;
+        margin: 39% 0% 0% 0%;
         font-size: 90%;
     }
     #TituloMision {
         margin: 0%;
         font-size: 90%;
+    }
+    #ParrafoVision,
+    #ParrafoValores,
+    #ParrafoMision {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    #capa1 {
+        top: 476px;
+    }
+    #TituloMision {
+        margin: 0%;
+        font-size: 70%;
+    }
+    #TituloValores {
+        margin: 31% 0% 0% 0%;
+        font-size: 70%;
+    }
+    #TituloVision {
+        margin: 49% 0% 0% 0%;
+        font-size: 70%;
     }
     #ParrafoVision,
     #ParrafoValores,
@@ -93,33 +118,13 @@ los textos del documento*/
     }
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 505px) {
+    .Titulo {
+        color: white;
+        font-size: 350%;
+    }
     #capa1 {
-        top: 295px;
-        left: 50%;
-    }
-    #TituloMision {
-        margin: 0%;
-        font-size: 70%;
-    }
-    #TituloValores {
-        margin: 52% 0% 0% 0%;
-        font-size: 70%;
-    }
-    #TituloVision {
-        margin: 92% 0% 0% 0%;
-        font-size: 70%;
-    }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
-        font-size: 45%;
-    }
-}
-
-@media screen and (max-width: 401px) {
-    #capa1 {
-        top: 345px;
+        top: 376px;
         left: 50%;
     }
     #TituloMision {
@@ -138,6 +143,16 @@ los textos del documento*/
     #ParrafoValores,
     #ParrafoMision {
         font-size: 45%;
+    }
+}
+
+
+/*vista en telefonos*/
+
+@media screen and (max-width: 360px) {
+    #capa1 {
+        top: 336px;
+        left: 50%;
     }
 }
 

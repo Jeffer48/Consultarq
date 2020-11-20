@@ -18,6 +18,10 @@ h1.OurServicesTitle {
     text-align: center;
     color: white;
     font-size: 500%;
+<<<<<<< HEAD
+=======
+   /* margin: 0%;*/
+>>>>>>> 7321cbeca68f9878bca5c1b5b64e85d697f55448
 }
 
 ul.OurServices {
@@ -44,6 +48,16 @@ img.NSImg {
 }
 
 @media screen and (max-width: 745px) {
+<<<<<<< HEAD
+=======
+    h1.OurServicesTitle {
+        margin: 0%;
+    }
+
+    section.OurServicesSection {
+        top: 14.5%;
+    }
+>>>>>>> 7321cbeca68f9878bca5c1b5b64e85d697f55448
 
     /*  section.OurServicesSection {
         top: 20%; Muy abajo lo cambie
@@ -54,84 +68,58 @@ img.NSImg {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
 
-    header {
-        width: 100vh;
+   h1.OurServicesTitle {
+        width:fit-content;
+        font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .NServicio {
-        font-size: 150%;
-    }
-}
-@media screen and (max-width: 550px) {
-
-    header {
-        width: 100vh;
-    }
-
-    h1.OurServicesTitle {
-        width: 130%;
-    }
-
-    ul.OurServices {
-        width: 130%;
+        width:fit-content;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size: 150%;
+        font-size:larger;
     }
 }
 
 @media screen and (max-width: 450px) {
-
-    header {
-        width: 100vh;
-    }
-
-    h1.OurServicesTitle {
-        width: 178%;
+ 
+   h1.OurServicesTitle {
+        width:fit-content;
+        font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-        width: 178%;
+<<<<<<< HEAD
+        width:fit-content;
+=======
+        width: fit-content;
+>>>>>>> 7321cbeca68f9878bca5c1b5b64e85d697f55448
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size: 150%;
+        font-size:larger;
     }
 }
 
 @media screen and (max-width: 300px) {
-    header {
-        width: 100vh;
-    }
-
+    
     h1.OurServicesTitle {
-        width: 230%;
+        width: fit-content;
+        font-size: -webkit-xxx-large;
     }
 
     ul.OurServices {
-        width: 230%;
+        width: fit-content;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
-
-    .NServicio {
-        font-size: 150%;
-    }
-
-}

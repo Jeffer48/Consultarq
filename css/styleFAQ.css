@@ -1,6 +1,8 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> 65e1f033d1ec50c820b0e6aa36d661b86509ceb9
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
 * {
     list-style: none;
     font-family: 'Montserrat', sans-serif;
@@ -15,10 +17,16 @@ body {
 }
 
 h1 {
-    font-size: 500%;
+    font-size: 650%;
 }
 
+<<<<<<< HEAD
+h1 {
+    font-size: 500%;
+}
+=======
 
+>>>>>>> 65e1f033d1ec50c820b0e6aa36d661b86509ceb9
 
 html {
     background: url('../img/Preguntas frecuentes/fondo-03.png') no-repeat center center fixed;
@@ -28,7 +36,10 @@ html {
     background-size: 100% 100%;
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 65e1f033d1ec50c820b0e6aa36d661b86509ceb9
 section {
     bottom: 0%;
     color: white;
@@ -62,12 +73,17 @@ section {
 .preguntasCaja {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+}
+
+.preguntasCaja {
+=======
+>>>>>>> 65e1f033d1ec50c820b0e6aa36d661b86509ceb9
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 70px;
     column-gap: 0px;
 }
-
 
 @media screen and (max-width: 1242px) {
     h1 {
@@ -75,7 +91,6 @@ section {
         font-size: 980%;
         text-align: center;
     }
-
     section {
         bottom: 0%;
         color: white;
@@ -85,7 +100,6 @@ section {
         height: 85%;
         font-size: 50%;
     }
-
     .accordion {
         bottom: 20%;
         width: 98%;
@@ -93,7 +107,6 @@ section {
         margin-right: 0%;
         margin-left: 0%;
     }
-
     .card-body {
         color: white;
         background-color: #52515c8e;
@@ -101,8 +114,7 @@ section {
         border: 10px;
         font-size: 20px;
     }
-    
-       .preguntasCaja {
+    .preguntasCaja {
         display: grid;
         grid-column: 1fr 1fr;
         grid-gap: 10px;
@@ -119,7 +131,6 @@ section {
         font-size: 520%;
         text-align: center;
     }
-
     section {
         bottom: 0%;
         color: white;
@@ -130,7 +141,6 @@ section {
         font-size: 70%;
         margin-left: 5px;
     }
-
     .preguntasCaja {
         display: grid;
         grid-template-columns: 1fr;
@@ -139,7 +149,6 @@ section {
         margin-bottom: 50px;
         column-gap: 0px;
     }
-
     .accordion {
         bottom: 20%;
         width: 90%;
@@ -147,7 +156,6 @@ section {
         margin-right: 5%;
         margin-left: 5%;
     }
-
     .card-body {
         color: white;
         background-color: #52515c8e;

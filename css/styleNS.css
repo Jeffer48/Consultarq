@@ -11,14 +11,13 @@ html {
 section.OurServicesSection {
     position: absolute;
     width: 100%;
-   /* top: 7%;*/
+    top: 7%;
 }
 
 h1.OurServicesTitle {
     text-align: center;
     color: white;
     font-size: 500%;
-    margin: 0%;
 }
 
 ul.OurServices {
@@ -45,14 +44,11 @@ img.NSImg {
 }
 
 @media screen and (max-width: 745px) {
-    h1.OurServicesTitle {
-        margin: 0%;
-    }
 
-    section.OurServicesSection {
-        top: 13%;
-    }
-
+    /*  section.OurServicesSection {
+        top: 20%; Muy abajo lo cambie
+        top: 10%; Pero es lo mismo
+    }*/
     #Fondo {
         height: 130%;
     }
@@ -60,44 +56,44 @@ img.NSImg {
 
 @media screen and (max-width: 650px) {
 
-    h1.OurServicesTitle {
-        width: fit-content;
-        font-size: -webkit-xxx-large;
+   h1.OurServicesTitle {
+        width:fit-content;
+        font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-        width: fit-content;
+        width:fit-content;
         margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size: larger;
+        font-size:larger;
     }
 }
 
 @media screen and (max-width: 450px) {
-
-    h1.OurServicesTitle {
-        width: fit-content;
-        font-size: -webkit-xxx-large;
+ 
+   h1.OurServicesTitle {
+        width:fit-content;
+        font-size:-webkit-xxx-large;
     }
 
     ul.OurServices {
-        width: fit-content;
-        margin: 0%;
+        width:fit-content;
+        margin: 0px;
         display: flex;
         flex-wrap: wrap;
     }
 
     .NServicio {
-        font-size: large;
+        font-size:larger;
     }
 }
 
 @media screen and (max-width: 300px) {
-
+    
     h1.OurServicesTitle {
         width: fit-content;
         font-size: -webkit-xxx-large;
@@ -109,8 +105,3 @@ img.NSImg {
         display: flex;
         flex-wrap: wrap;
     }
-    
-    .NServicio {
-        font-size: medium;
-    }
-}

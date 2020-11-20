@@ -82,8 +82,8 @@ section {
         position: absolute;
         text-align: justify;
         width: 90%;
-        height: 85%;
-        font-size: 50%;
+        height: 70%;
+        font-size: 70%;
     }
 
     .accordion {
@@ -127,7 +127,7 @@ section {
         text-align: justify;
         width: 90%;
         height: 85%;
-        font-size: 70%;
+        font-size: 50%;
         margin-left: 5px;
     }
 

@@ -29,7 +29,7 @@ ul.Services {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
     border: 10px;
-    height: 25vh;
+    min-height: 25vh;
     width: 40vh;
     margin: 2vh;
 }
@@ -45,6 +45,11 @@ ul.Services {
 
 .ServiciosRes li {
     list-style: square;
+}
+
+.verMas{
+    float: right;
+    font-variant: all-petite-caps;
 }
 
 @media screen and (max-width: 800px) {

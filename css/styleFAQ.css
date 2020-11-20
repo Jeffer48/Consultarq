@@ -51,7 +51,7 @@ section {
     background-color: #52515c8e;
     padding: 10px;
     border: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .preguntasCaja {
@@ -64,7 +64,7 @@ section {
     grid-template-columns: 1fr 1fr;
     margin-top: 70px;
     column-gap: 0px;
-     text-align: justify;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1242px) {
@@ -94,7 +94,7 @@ section {
         background-color: #52515c8e;
         padding: 10px;
         border: 10px;
-        font-size: 20px;
+        font-size: 18px;
     }
     .preguntasCaja {
         display: grid;

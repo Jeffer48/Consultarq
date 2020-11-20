@@ -1,5 +1,4 @@
 h1 {
-    font-size: 100px;
     font-size: 500%;
     margin: 5vh;
 }
@@ -23,8 +22,9 @@ html {
 form{
     width: 100%;
     bottom: 20vh;
-    position: fixed;
+    position: absolute;
     height: 37vh;
+    margin-top: 5%;
 }
 
 form ul{

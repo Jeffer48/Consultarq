@@ -123,10 +123,10 @@ los textos del documento*/
 @media screen and (max-width: 505px) {
     .Titulo {
         color: white;
-        font-size: 300%;
+        font-size: 210%;
     }
     #capa1 {
-        top: 376px;
+        top: 250px;
         left: 50%;
     }
     #TituloMision {
@@ -152,9 +152,30 @@ los textos del documento*/
 /*vista en telefonos*/
 
 @media screen and (max-width: 360px) {
+    .Titulo {
+        color: white;
+        font-size: 170%;
+    }
     #capa1 {
-        top: 336px;
+        top: 230px;
         left: 50%;
+    }
+    #TituloMision {
+        margin: 0%;
+        font-size: 70%;
+    }
+    #TituloValores {
+        margin: 58% 0% 0% 0%;
+        font-size: 70%;
+    }
+    #TituloVision {
+        margin: 92% 0% 0% 0%;
+        font-size: 70%;
+    }
+    #ParrafoVision,
+    #ParrafoValores,
+    #ParrafoMision {
+        font-size: 45%;
     }
 }
 

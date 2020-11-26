@@ -157,6 +157,9 @@ html {
 }
 
 @media screen and (max-width: 680px) {
+    .Titulo {
+        font-size: 300%;
+    }
     #IngenieroCivilh3 {
         font-size: 70%;
     }
@@ -178,6 +181,9 @@ html {
 }
 
 @media screen and (max-width: 410px) {
+    .Titulo {
+        font-size: 200%;
+    }
     #capa1 {
         margin-top: 10%;
     }

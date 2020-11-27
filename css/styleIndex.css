@@ -8,7 +8,7 @@ section.ServiceSection {
 /*Sirve para poner la imagen de fondo
   y hacerla responsiva*/
 
-html {
+body{
     background: url('../img/Inicio/Fondo-01.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -53,9 +53,8 @@ ul.Services {
 }
 
 @media screen and (max-width: 800px) {
-    html{
+    body{
         background: url('../img/Inicio/Fondo-02.png') no-repeat center center fixed;
-        background-size: 100% 100%;
         background-position: left;
     }
     

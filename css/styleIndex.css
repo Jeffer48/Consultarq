@@ -53,6 +53,12 @@ ul.Services {
 }
 
 @media screen and (max-width: 800px) {
+    html{
+        background: url('../img/Inicio/Fondo-02.png') no-repeat center center fixed;
+        background-size: 75% 100%;
+        background-position: left;
+    }
+    
     .ServiciosRes h2 {
         margin: auto;
     }

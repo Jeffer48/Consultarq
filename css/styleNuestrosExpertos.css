@@ -4,182 +4,211 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
-    margin: 0px;
-}
-
-#capa4,
-#capa5,
-#capa6 {
-    position: absolute;
-    z-index: 0;
-    top: 5%;
-}
-
-.IngenieriaCivil,
-.IngenieriaEstructural,
-.Arquitecto {
-    width: 100%;
-    height: 820px;
+html {
+    background: url('../img/Nuestros\ expertos/fondo-05.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
 }
 
 #Titulo {
-    position: absolute;
-    z-index: 1;
     margin: 0px;
     width: 100%;
-    top: 15%;
+    top: 200px;
 }
 
 .Titulo {
     text-align: center;
     color: white;
-    font-size: 300%;
+    font-size: 500%;
     margin: 0px;
     width: 100%;
-    top: 15%;
+    top: 2%;
 }
+
+
+/*-----------------------------Primera Imagen-----------------------------*/
 
 #capa1 {
-    position: absolute;
-    z-index: 1;
     color: white;
-    top: 27%;
-    left: 4%;
-    width: 15%;
-    height: 19%;
+    width: 80%;
+    height: 35%;
+    background-image: url('../img/Nuestros\ expertos/IngenieroCivil.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 2%;
 }
+
+#IngenieroCivilh3 {
+    margin-right: 77%;
+    margin-bottom: 0px;
+    font-size: 150%;
+    text-align: center;
+}
+
+#IngenieroCivilp {
+    margin-right: 77%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    text-align: justify;
+}
+
+
+/*-----------------------------Segunda Imagen-----------------------------*/
 
 #capa2 {
-    position: absolute;
-    z-index: 1;
     color: black;
-    top: 49%;
-    left: 81%;
-    width: 15%;
-    height: 19%;
+    background-image: url('../img/Nuestros\ expertos/IngenieroEstructural.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 35%;
+    margin-right: 2%;
+    margin-left: 18%;
 }
+
+#IngenieriaEstructuralh3 {
+    margin-left: 77%;
+    margin-right: 2%;
+    margin-bottom: 0px;
+    font-size: 150%;
+    text-align: center;
+}
+
+#IngenieriaEstructuralp {
+    margin-left: 77%;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    text-align: justify;
+}
+
+
+/*--------------------------Tercera Parte---------------------------*/
 
 #capa3 {
-    position: absolute;
-    z-index: 1;
     color: black;
-    top: 71%;
-    left: 4%;
-    width: 15%;
-    height: 19%;
+    background-image: url('../img/Nuestros\ expertos/Arquitecto.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 35%;
+    margin-left: 2%;
 }
 
-@media screen and (min-width: 1210px) {
-    h3 {
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 5%;
-        font-size: 150%;
-    }
-    p {
-        font-size: 70%;
-    }
+#Arquitectoh3 {
+    margin-right: 77%;
+    margin-bottom: 0px;
+    font-size: 150%;
+    text-align: center;
 }
 
-@media screen and (max-width: 1209px) {
-    h3 {
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 5%;
+#Arquitectop {
+    margin-right: 77%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1230px) {
+    #IngenieroCivilh3 {
         font-size: 120%;
     }
-    p {
-        font-size: 55%;
-    }
-}
-
-@media screen and (max-width: 727px) {
-    h3 {
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 5%;
-        font-size: 110%;
-    }
-    p {
-        font-size: 45%;
-    }
-    #Titulo {
-        position: absolute;
-        z-index: 1;
-        margin: 0px;
-        width: 100%;
-        top: 20%;
-    }
-    .Titulo {
-        text-align: center;
-        color: white;
-        font-size: 150%;
-        margin: 0px;
-        width: 100%;
-        top: 20%;
-    }
-    #capa2 {
-        position: absolute;
-        z-index: 1;
-        color: black;
-        top: 49%;
-        left: 79%;
-        width: 15%;
-        height: 13%;
-    }
-}
-
-@media screen and (max-width: 491px) {
-    h3 {
-        text-align: center;
-        margin: 0px;
-        margin-bottom: 5%;
-        font-size: 75%;
-    }
-    p {
-        font-size: 35%;
-    }
-    #Titulo {
-        position: absolute;
-        z-index: 1;
-        margin: 0px;
-        width: 100%;
-        top: 24%;
-    }
-    .Titulo {
-        text-align: center;
-        color: white;
+    #IngenieroCivilp {
         font-size: 100%;
-        margin: 0px;
-        width: 100%;
-        top: 24%;
+    }
+    #IngenieriaEstructuralh3 {
+        font-size: 120%;
+    }
+    #IngenieriaEstructuralp {
+        font-size: 100%;
+    }
+    #Arquitectoh3 {
+        font-size: 120%;
+    }
+    #Arquitectop {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #IngenieroCivilh3 {
+        font-size: 100%;
+    }
+    #IngenieroCivilp {
+        font-size: 80%;
+    }
+    #IngenieriaEstructuralh3 {
+        font-size: 100%;
+    }
+    #IngenieriaEstructuralp {
+        font-size: 80%;
+    }
+    #Arquitectoh3 {
+        font-size: 100%;
+    }
+    #Arquitectop {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .Titulo {
+        font-size: 300%;
+    }
+    #IngenieroCivilh3 {
+        font-size: 70%;
+    }
+    #IngenieroCivilp {
+        font-size: 60%;
+    }
+    #IngenieriaEstructuralh3 {
+        font-size: 70%;
+    }
+    #IngenieriaEstructuralp {
+        font-size: 60%;
+    }
+    #Arquitectoh3 {
+        font-size: 70%;
+    }
+    #Arquitectop {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .Titulo {
+        font-size: 200%;
     }
     #capa1 {
-        position: absolute;
-        z-index: 1;
-        color: white;
-        top: 27%;
-        left: 4%;
-        width: 15%;
-        height: 19%;
+        margin-top: 10%;
+    }
+    #IngenieroCivilh3 {
+        font-size: 50%;
+    }
+    #IngenieroCivilp {
+        font-size: 40%;
     }
     #capa2 {
-        position: absolute;
-        z-index: 1;
-        color: black;
-        top: 49%;
-        left: 78%;
-        width: 15%;
-        height: 13%;
+        margin-top: 20%;
+    }
+    #IngenieriaEstructuralh3 {
+        font-size: 50%;
+    }
+    #IngenieriaEstructuralp {
+        font-size: 40%;
     }
     #capa3 {
-        position: absolute;
-        z-index: 1;
-        color: black;
-        top: 71%;
-        left: 4%;
-        width: 15%;
-        height: 19%;
+        margin-top: 20%;
+    }
+    #Arquitectoh3 {
+        font-size: 50%;
+    }
+    #Arquitectop {
+        font-size: 40%;
     }
 }

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Consultarq</title>
-    
+
+    <link rel="shortcut icon" href="img/logo-consultarq.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/styleContacto.css" type="text/css">
     <script src="js/script.js" defer type="text/javascript"></script>
-    <link rel="shortcut icon" href="img/logo-consultarq.png" />
+    <script src="js/scriptContacto.js" defer type="text/javascript"></script>
     <meta name="viewport" content="width=devicewidth,initial-scale=1">
 </head>
+
 <body>
-   <img src="img/Contactanos/fondo-02.png" id="Fondo">
+    <!--Esto ES UN COMENTARIO CUCHO XDXDXD
+    <img src="img/Contactanos/fondo-02.png" id="Fondo">-->
     <header>
         <nav>
             <ul class="paginas">
@@ -24,10 +28,10 @@
             </ul>
             <ul class="redes">
                 <li class="letras_log"><img src="img/Inicio/letras%20logo-01.png" alt="Consultarq" height="50"></li>
-                <li><img src="img/Inicio/icono%20face-01.png" alt="Link a nuestro facebook" height="50"></li>
-                <li><img src="img/Inicio/icono%20telefono-01.png" alt="" height="50"></li>
-                <li><img src="img/Inicio/icono%20sobre-01.png" alt="" height="50"></li>
-                <li><img src="img/Inicio/icono%20insta-01.png" alt="Link a nuestro instagram" height="50"></li>
+                <li><a href="https://www.facebook.com/ConsultArq-101097018429982" target="_blank"><img src="img/Inicio/icono%20face-01.png" alt="Link a nuestro facebook" height="50"></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=+524436510506" target="_blank"><img src="img/Inicio/icono%20telefono-01.png" alt="Link a nuestro número de celular" height="50"></a></li>
+                <li><a href="mailto:consultarq.contacto@gmail.com"><img src="img/Inicio/icono%20sobre-01.png" alt="Link a nuestro correo" height="50"></a></li>
+                <li><a href="https://www.instagram.com/consultarq5/" target="_blank"><img src="img/Inicio/icono%20insta-01.png" alt="Link a nuestro instagram" height="50"></a></li>
             </ul>
         </nav>
         <nav id="hamburguer-menu">
@@ -35,21 +39,22 @@
             <img id="logo" src="img/Inicio/letras%20logo-01.png" alt="Consultarq" height="50">
         </nav>
     </header>
-    
+
     <main>
         <section class="texto">
-            <h1>CONTÁCTANOS</h1>
-            <p>En CONSULTARQ nos interesas, por favor llena el siguiente formulario <br> y te atenderemos lo más pronto posible</p>
+            <h1 id="titulo">CONTÁCTANOS</h1>
+            <p>En CONSULTARQ nos interesas, por favor llena el siguiente formulario <br> y te atenderemos lo más pronto posible.</p>
         </section>
-        <section class="formulario">
-            <ul>
-                <li>Nombre</li>
-                <li>Apellido Paterno</li>
-                <li>Apellido Materno</li>
-                <li>Categoría</li>
-                <li>E-mail</li>
+        <form action="" method="post">
+            <ul class="form">
+                <li><input type="text" id="name" name="Nombre" placeholder="Nombre"></li>
+                <li><input type="text" id="categoria" name="categoria" placeholder="Categoria"></li>
+                <li><input type="number" id="tel" name="tel" placeholder="Teléfono"></li>
+                <li><input type="email" id="email" name="email" placeholder="E-mail"></li>
+                <li class="msg"><textarea id="msg" name="msg" placeholder="Mensaje" style="height: 100%"></textarea></li>
             </ul>
-        </section>
+        </form>
     </main>
 </body>
+
 </html>

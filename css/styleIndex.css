@@ -1,50 +1,71 @@
-section.ServiceSection{
+section.ServiceSection {
     top: 55%;
     position: absolute;
     width: 100%;
 }
 
-ul.Services{
+
+/*Sirve para poner la imagen de fondo
+  y hacerla responsiva*/
+
+body{
+    background: url('../img/Inicio/Fondo-01.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    /*para que la imagen cubra toda la pantalla*/
+}
+
+ul.Services {
     display: flex;
     justify-content: space-around;
     padding: 0px;
     flex-wrap: wrap;
 }
 
-.ServiciosRes{
+.ServiciosRes {
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
     border: 10px;
-    height: 25vh;
+    min-height: 25vh;
     width: 40vh;
     margin: 2vh;
 }
 
-.ServiciosRes h2{
+.ServiciosRes h2 {
     text-align: center;
 }
 
-.ServiciosRes ul{
+.ServiciosRes ul {
     align-items: center;
     padding: 0px;
 }
 
-.ServiciosRes li{
+.ServiciosRes li {
     list-style: square;
 }
 
-@media screen and (max-width: 800px){
-    .ServiciosRes h2{
+.verMas{
+    float: right;
+    font-variant: all-petite-caps;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        background: url('../img/Inicio/Fondo-02.png') no-repeat center center fixed;
+        background-position: left;
+        overflow-x: hidden;
+    }
+    
+    .ServiciosRes h2 {
         margin: auto;
     }
 }
 
-@media screen and (max-width: 460px){
-    section.ServiceSection{
+@media screen and (max-width: 460px) {
+    section.ServiceSection {
         width: auto;
     }
 }
-
-/* Prueba de Git */
-/* Prueba de actualización local */

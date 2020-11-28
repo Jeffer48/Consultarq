@@ -1,14 +1,24 @@
 /*---------------------------------------------NUESTROS SERVICIOS------------------------------------*/
+
+body{
+    background: url('../img/NuestrosServicios/fondo-04.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+}
+
 section.OurServicesSection {
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 7%;
 }
-    
-h1.OurServicesTitle{
+
+h1.OurServicesTitle {
     text-align: center;
     color: white;
-    font-size: 300%;
+    font-size: 500%;
+    /* margin: 0%;*/
 }
 
 ul.OurServices {
@@ -35,11 +45,58 @@ img.NSImg {
 }
 
 @media screen and (max-width: 745px) {
-    section.OurServicesSection {
-        top: 20%;
+
+    body {
+        overflow-x: hidden;
+        background: url('../img/NuestrosServicios/fondo-04-2.png') no-repeat center center fixed;
+        background-position: left;
+        background-size: 360px 100%;
     }
-    
-    #Fondo{
+
+    h1.OurServicesTitle {
+        margin: 0%;
+    }
+
+    section.OurServicesSection {
+        top: 14.5%;
+    }
+
+    /*  section.OurServicesSection {
+        top: 20%; Muy abajo lo cambie
+        top: 10%; Pero es lo mismo
+    }*/
+    #Fondo {
         height: 130%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    h1.OurServicesTitle {
+        width: fit-content;
+        font-size: -webkit-xxx-large;
+    }
+
+    ul.OurServices {
+        width: fit-content;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .NServicio {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .NServicio {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .NServicio {
+        font-size: medium;
     }
 }

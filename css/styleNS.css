@@ -1,6 +1,6 @@
 /*---------------------------------------------NUESTROS SERVICIOS------------------------------------*/
 
-html {
+body{
     background: url('../img/NuestrosServicios/fondo-04.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -48,6 +48,9 @@ img.NSImg {
 
     body {
         overflow-x: hidden;
+        background: url('../img/NuestrosServicios/fondo-04-2.png') no-repeat center center fixed;
+        background-position: left;
+        background-size: 360px 100%;
     }
 
     h1.OurServicesTitle {

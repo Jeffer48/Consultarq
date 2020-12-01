@@ -68,6 +68,11 @@ section {
 }
 
 @media screen and (max-width: 1242px) {
+    body{
+        background: url('../img/Preguntas frecuentes/fondo-03.png') no-repeat center center fixed;
+        background-position: left;
+        overflow-x: hidden;
+    }
     h1 {
         margin-left: 5%;
         font-size: 980%;
@@ -109,11 +114,6 @@ section {
 }
 
 @media screen and (max-width: 760px) {
-    body{
-        background: url('../img/Preguntas frecuentes/fondo-03.png') no-repeat center center fixed;
-        background-position: left;
-        overflow-x: hidden;
-    }
     h1 {
         margin-left: 0%;
         font-size: 520%;

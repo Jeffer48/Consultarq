@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Consultarq</title>
-    
+
+    <link rel="shortcut icon" href="img/logo-consultarq.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/styleContacto.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <script src="js/scriptContacto.js" defer type="text/javascript"></script>
+    <meta name="viewport" content="width=devicewidth,initial-scale=1">
 </head>
+
 <body>
-   <img src="img/Contactanos/fondo-02.png" id="Fondo">
+    <!--Esto ES UN COMENTARIO CUCHO XDXDXD
+    <img src="img/Contactanos/fondo-02.png" id="Fondo">-->
     <header>
-        <nav>
-            <ul class="paginas">
-                <li style="line-height: 220%"><a href="index.html">INICIO</a></li>
-                <li style="line-height: 220%"><a href="contacto.html">CONTACTO</a></li>
-                <li style="line-height: 220%"><a href="FAQs.html">FAQ´s</a></li>
-                <li><a href="Nuestros_servicios.html">NUESTROS SERVICIOS</a></li>
-                <li><a href="Nuestros_expertos.html">NUESTROS EXPERTOS</a></li>
-                <li><a href="SobreNosotros.html">SOBRE NOSOTROS</a></li>
-            </ul>
-            <ul class="redes">
-                <li class="letras_log"><img src="img/Inicio/letras%20logo-01.png" alt="Consultarq" height="50"></li>
-                <li><img src="img/Inicio/icono%20face-01.png" alt="Link a nuestro facebook" height="50"></li>
-                <li><img src="img/Inicio/icono%20telefono-01.png" alt="" height="50"></li>
-                <li><img src="img/Inicio/icono%20sobre-01.png" alt="" height="50"></li>
-                <li><img src="img/Inicio/icono%20insta-01.png" alt="Link a nuestro instagram" height="50"></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 1">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contacto.html">CONTACTO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="FAQs.html">FAQ´S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nuestros_servicios.html">NUESTROS SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nuestros_expertos.html">NUESTROS EXPERTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SobreNosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#"><img src="img/Inicio/letras%20logo-04.png" alt="Logo"></a>
+            <div class="sectionRedes">
+                <ul class="redes">
+                    <li><img src="img/Inicio/icono%20face-01.png" alt="Facebook"></li>
+                    <li><img src="img/Inicio/icono%20insta-01.png" alt="Instagram"></li>
+                    <li><img src="img/Inicio/icono%20sobre-01.png" alt="Correo"></li>
+                    <li><img src="img/Inicio/icono%20telefono-01.png" alt="Whatsapp"></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
+
     <main>
-        <section>
-            <h1>CONTÁCTANOS</h1>
-            <p>En CONSULTARQ nos interesas, por favor llena el siguiente formulario <br> y te atenderemos lo más pronto posible</p>
+        <section class="texto">
+            <h1 id="titulo">CONTÁCTANOS</h1>
+            <p>En CONSULTARQ nos interesas, por favor llena el siguiente formulario <br> y te atenderemos lo más pronto posible.</p>
         </section>
-        <section class="formulario">
-            <ul>
-                <li>Nombre</li>
-                <li>Apellido Paterno</li>
-                <li>Apellido Materno</li>
-                <li>Categoría</li>
-                <li>E-mail</li>
+        <form action="" method="post">
+            <ul class="form">
+                <li><input type="text" id="name" name="Nombre" placeholder="Nombre"></li>
+                <li><input type="text" id="categoria" name="categoria" placeholder="Categoria"></li>
+                <li><input type="number" id="tel" name="tel" placeholder="Teléfono"></li>
+                <li><input type="email" id="email" name="email" placeholder="E-mail"></li>
+                <li class="msg"><textarea id="msg" name="msg" placeholder="Mensaje" style="height: 100%"></textarea></li>
             </ul>
-        </section>
+        </form>
     </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
+
 </html>

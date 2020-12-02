@@ -8,36 +8,18 @@ body {
     background-color: #000f27 !important;
 }
 
-.Vision,
-.Valores,
-.Mision {
-    color: white;
-    font-size: 100%;
-}
-
-.Titulo {
+main h1#Titulo {
     color: white;
     font-size: 500%;
-}
-
-.mapa,
-.diagrama {
-    width: 100%;
-    height: 800px;
-}
-
-#SobreNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
+    justify-self: center;
 }
 
 
 /*el primer div que contiene
 los textos del documento*/
 
-#capa1 {
+main div#capa1 {
     position: absolute;
     z-index: 1;
     /*separacion del la parte superior de la pagina al contenedor de los textos*/
@@ -52,139 +34,170 @@ los textos del documento*/
     height: 80%;
 }
 
-#TituloValores {
-    margin: 13% 0% 0% 0%;
-    font-size: 99%;
+main div#capa1 p,
+main div#capa1 h4 {
+    color: white;
 }
 
-#TituloVision {
-    margin: 28% 0% 0% 0%;
-    font-size: 99%;
-}
-
-#TituloMision {
+main div#capa1 h4#TituloMision {
     margin: 0%;
     font-size: 99%;
 }
 
-#ParrafoVision,
-#ParrafoValores,
-#ParrafoMision {
+main div#capa1 h4#TituloValores {
+    margin: 13% 0% 0% 0%;
+    font-size: 99%;
+}
+
+main div#capa1 h4#TituloVision {
+    margin: 28% 0% 0% 0%;
+    font-size: 99%;
+}
+
+main div#capa1 p {
     font-size: 79%;
     text-align: justify;
 }
 
-@media screen and (max-width: 1197px) {
-    #capa1 {
-        top: 371px;
+main figure#capa2 {
+    position: absolute;
+    z-index: 0;
+}
+
+main figure#capa3 {
+    position: absolute;
+    z-index: 0;
+}
+
+main figure#capa2 img#mapa,
+main figure#capa3 img#diagrama {
+    width: 100%;
+    height: 800px;
+}
+
+@media screen and (max-width: 1253px) {
+    main div#capa1 {
+        top: 380px;
     }
-    #TituloValores {
-        margin: 24% 0% 0% 0%;
-        font-size: 90%;
+    main div#capa1 h4#TituloMision {
+        font-size: 115%;
     }
-    #TituloVision {
-        margin: 39% 0% 0% 0%;
-        font-size: 90%;
+    main div#capa1 h4#TituloValores {
+        margin: 20% 0% 0% 0%;
+        font-size: 115%;
     }
-    #TituloMision {
-        margin: 0%;
-        font-size: 90%;
+    main div#capa1 h4#TituloVision {
+        margin: 30% 0% 0% 0%;
+        font-size: 115%;
     }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
+    main div#capa1 p {
         font-size: 70%;
     }
 }
 
-@media screen and (max-width: 810px) {
-    #capa1 {
-        top: 476px;
+@media screen and (max-width: 991px) {
+    main div#capa1 {
+        top: 310px;
     }
-    #TituloMision {
-        margin: 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloMision {
+        font-size: 105%;
     }
-    #TituloValores {
-        margin: 31% 0% 0% 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloValores {
+        margin: 30% 0% 0% 0%;
+        font-size: 105%;
     }
-    #TituloVision {
-        margin: 49% 0% 0% 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloVision {
+        margin: 40% 0% 0% 0%;
+        font-size: 105%;
     }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
+    main div#capa1 p {
         font-size: 60%;
     }
 }
 
-@media screen and (max-width: 505px) {
-    .Titulo {
-        color: white;
+@media screen and (max-width: 799px) {
+    main h1#Titulo {
         font-size: 210%;
     }
-    #capa1 {
-        top: 250px;
-        left: 50%;
+    main div#capa1 {
+        top: 190px;
     }
-    #TituloMision {
+    main div#capa1 h4#TituloMision {
         margin: 0%;
-        font-size: 70%;
+        font-size: 95%;
     }
-    #TituloValores {
-        margin: 58% 0% 0% 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloValores {
+        margin: 28% 0% 0% 0%;
+        font-size: 95%;
     }
-    #TituloVision {
-        margin: 92% 0% 0% 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloVision {
+        margin: 50% 0% 0% 0%;
+        font-size: 95%;
     }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
-        font-size: 45%;
+    main div#capa1 p {
+        font-size: 58%;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    main h1#Titulo {
+        font-size: 210%;
+    }
+    main div#capa1 {
+        top: 180px;
+    }
+    main div#capa1 h4#TituloMision {
+        margin: 0%;
+        font-size: 90%;
+    }
+    main div#capa1 h4#TituloValores {
+        margin: 45% 0% 0% 0%;
+        font-size: 90%;
+    }
+    main div#capa1 h4#TituloVision {
+        margin: 65% 0% 0% 0%;
+        font-size: 90%;
+    }
+    main div#capa1 p {
+        font-size: 46%;
     }
 }
 
 
 /*vista en telefonos*/
 
-@media screen and (max-width: 360px) {
-    .Titulo {
-        color: white;
+@media screen and (max-width: 334px) {
+    main h1#Titulo {
         font-size: 170%;
     }
-    #capa1 {
-        top: 230px;
-        left: 50%;
+    main div#capa1 {
+        top: 165px;
     }
-    #TituloMision {
+    main div#capa1 h4#TituloMision {
         margin: 0%;
-        font-size: 70%;
+        font-size: 60%;
     }
-    #TituloValores {
-        margin: 58% 0% 0% 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloValores {
+        margin: 70% 0% 0% 0%;
+        font-size: 60%;
     }
-    #TituloVision {
-        margin: 92% 0% 0% 0%;
-        font-size: 70%;
+    main div#capa1 h4#TituloVision {
+        margin: 100% 0% 0% 0%;
+        font-size: 60%;
     }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
-        font-size: 45%;
+    main div#capa1 p {
+        font-size: 40%;
     }
 }
 
-#capa2 {
-    position: absolute;
-    z-index: 0;
-}
-
-#capa3 {
-    position: absolute;
-    z-index: 0;
+@media screen and (max-width: 316px) {
+    main div#capa1 {
+        top: 202px;
+    }
+    main div#capa1 h4#TituloValores {
+        margin: 76% 0% 0% 0%;
+    }
+    main div#capa1 h4#TituloVision {
+        margin: 101% 0% 0% 0%;
+    }
 }

@@ -2,7 +2,7 @@
 section.OurServicesSection {
     position: absolute;
     width: 100%;
-    top: 7%;
+    top: 12%;
 }
 
 h1.OurServicesTitle {
@@ -19,7 +19,7 @@ ul.OurServices {
 }
 
 .NServicio {
-    color: white;
+    color: white; 
     padding: 50px;
     border: 10px;
     text-align: justify;

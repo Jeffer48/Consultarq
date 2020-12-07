@@ -1,37 +1,78 @@
-h1{
-    font-size: 650%;
+h1 {
+    font-size: 500%;
+    margin: 5vh;
 }
 
-section{
+.texto {
     bottom: 60%;
     color: white;
-    position: absolute;
+    /*position: absolute;*/
     text-align: center;
     width: 100%;
 }
 
-section.formulario{
-    height: 50%;
-    bottom: 5%;
+form {
     width: 100%;
-    text-align: -webkit-center;
+    bottom: 20vh;
+    position: absolute;
+    height: 37vh;
+    margin-top: 5%;
 }
 
-.formulario ul{
+form ul {
+    margin: 0% 20%;
+    width: 60%;
     padding: 0px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 50%;
-    text-align: left;
+    height: 100%;
 }
 
-.formulario ul li{
-    width: 45%;
-    height: 80px;
-    margin: 5px;
-    border-width: 3px;
+.form li {
+    margin: 1%;
+    min-width: 45%;
+    min-height: 80px;
+}
+
+input,
+textarea {
+    width: 100%;
+    min-height: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-style: none;
     border-bottom-style: solid;
     border-color: white;
-    padding-right: 5px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+.msg {
+    width: 92%;
+}
+
+body {
+    background-image: url(../img/Contactanos/fondo-02.png);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 750px) {
+    form ul {
+        width: 90%;
+        margin: 0% 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        margin: 2vh 0vh;
+    }
+
+    form ul {
+        display: grid;
+    }
 }

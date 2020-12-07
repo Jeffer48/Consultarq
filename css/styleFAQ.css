@@ -40,6 +40,8 @@ section {
     margin-right: 10%;
     margin-left: 10%;
     color: black;
+    animation-duration: 6s;
+    animation-name: slideout;
 }
 
 .card-header {
@@ -68,7 +70,7 @@ section {
 }
 
 @media screen and (max-width: 1242px) {
-    body{
+    body {
         background: url('../img/Preguntas frecuentes/fondo-03.png') no-repeat center center fixed;
         background-position: left;
         overflow-x: hidden;
@@ -109,7 +111,6 @@ section {
         margin-top: 50px;
         margin-bottom: 50px;
         column-gap: 20px;
-        
     }
 }
 
@@ -150,5 +151,14 @@ section {
         padding: 10px;
         border: 10px;
         font-size: 14px;
+    }
+}
+
+@keyframes slideout {
+    from {
+        margin-bottom: -100%;
+    }
+    to {
+        margin-bottom: 0%;
     }
 }

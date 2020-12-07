@@ -5,30 +5,58 @@
 }
 
 body {
-        background-image: url(../img/Nuestros\ expertos/fondo-05.png);
-        background-size: 100% 100vh;
-        background-attachment: fixed;
-    }
-
-#Titulo {
-    margin: 0px;
-    width: 100%;
-    top: 200px;
+    background-image: url(../img/Nuestros\ expertos/fondo-05.png);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-.Titulo {
+main h1#Titulo {
     text-align: center;
     color: white;
     font-size: 500%;
     margin: 0px;
     width: 100%;
-    top: 2%;
+    top: 200px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
+
+@keyframes slideout {
+    from {
+        margin-left: -100%;
+    }
+    to {
+        margin-left: 2%;
+    }
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 18%;
+    }
+}
+
+
+/*
+@keyframes slideout {
+    from {
+        margin-top: 100%;
+        width: 300%;
+    }
+    to {
+        margin-top: 0%;
+        width: 100%;
+    }
+}*/
 
 
 /*-----------------------------Primera Imagen-----------------------------*/
 
-#capa1 {
+main section#IngenieroCivil {
     color: white;
     width: 80%;
     height: 35%;
@@ -36,16 +64,19 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-left: 2%;
+    margin-bottom: 3%;
+    animation-duration: 6s;
+    animation-name: slideout;
 }
 
-#IngenieroCivilh3 {
+main section#IngenieroCivil h3 {
     margin-right: 77%;
     margin-bottom: 0px;
     font-size: 150%;
     text-align: center;
 }
 
-#IngenieroCivilp {
+main section#IngenieroCivil p {
     margin-right: 77%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -56,7 +87,7 @@ body {
 
 /*-----------------------------Segunda Imagen-----------------------------*/
 
-#capa2 {
+main section#IngenieriaEstructural {
     color: black;
     background-image: url('../img/Nuestros\ expertos/IngenieroEstructural.png');
     background-repeat: no-repeat;
@@ -65,9 +96,12 @@ body {
     height: 35%;
     margin-right: 2%;
     margin-left: 18%;
+    margin-bottom: 3%;
+    animation-duration: 6s;
+    animation-name: slidein;
 }
 
-#IngenieriaEstructuralh3 {
+main section#IngenieriaEstructural h3 {
     margin-left: 77%;
     margin-right: 2%;
     margin-bottom: 0px;
@@ -75,7 +109,7 @@ body {
     text-align: center;
 }
 
-#IngenieriaEstructuralp {
+main section#IngenieriaEstructural p {
     margin-left: 77%;
     margin-right: 2%;
     margin-top: 0px;
@@ -87,7 +121,7 @@ body {
 
 /*--------------------------Tercera Parte---------------------------*/
 
-#capa3 {
+main section#Arquitecto {
     color: black;
     background-image: url('../img/Nuestros\ expertos/Arquitecto.png');
     background-repeat: no-repeat;
@@ -95,16 +129,18 @@ body {
     width: 80%;
     height: 35%;
     margin-left: 2%;
+    animation-duration: 6s;
+    animation-name: slideout;
 }
 
-#Arquitectoh3 {
+main section#Arquitecto h3 {
     margin-right: 77%;
     margin-bottom: 0px;
     font-size: 150%;
     text-align: center;
 }
 
-#Arquitectop {
+main section#Arquitecto p {
     margin-right: 77%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -113,100 +149,100 @@ body {
 }
 
 @media screen and (max-width: 1230px) {
-    #IngenieroCivilh3 {
+    main section#IngenieroCivil h3 {
         font-size: 120%;
     }
-    #IngenieroCivilp {
+    main section#IngenieroCivil p {
         font-size: 100%;
     }
-    #IngenieriaEstructuralh3 {
+    main section#IngenieriaEstructural h3 {
         font-size: 120%;
     }
-    #IngenieriaEstructuralp {
+    main section#IngenieriaEstructural p {
         font-size: 100%;
     }
-    #Arquitectoh3 {
+    main section#Arquitecto h3 {
         font-size: 120%;
     }
-    #Arquitectop {
+    main section#Arquitecto p {
         font-size: 100%;
     }
 }
 
 @media screen and (max-width: 950px) {
-    #IngenieroCivilh3 {
+    main section#IngenieroCivil h3 {
         font-size: 100%;
     }
-    #IngenieroCivilp {
+    main section#IngenieroCivil p {
         font-size: 80%;
     }
-    #IngenieriaEstructuralh3 {
+    main section#IngenieriaEstructural h3 {
         font-size: 100%;
     }
-    #IngenieriaEstructuralp {
+    main section#IngenieriaEstructural p {
         font-size: 80%;
     }
-    #Arquitectoh3 {
+    main section#Arquitecto h3 {
         font-size: 100%;
     }
-    #Arquitectop {
+    main section#Arquitecto p {
         font-size: 80%;
     }
 }
 
 @media screen and (max-width: 680px) {
-    .Titulo {
+    main h1#Titulo {
         font-size: 300%;
     }
-    #IngenieroCivilh3 {
+    main section#IngenieroCivil h3 {
         font-size: 70%;
     }
-    #IngenieroCivilp {
+    main section#IngenieroCivil p {
         font-size: 60%;
     }
-    #IngenieriaEstructuralh3 {
+    main section#IngenieriaEstructural h3 {
         font-size: 70%;
     }
-    #IngenieriaEstructuralp {
+    main section#IngenieriaEstructural p {
         font-size: 60%;
     }
-    #Arquitectoh3 {
+    main section#Arquitecto h3 {
         font-size: 70%;
     }
-    #Arquitectop {
+    main section#Arquitecto p {
         font-size: 60%;
     }
 }
 
 @media screen and (max-width: 410px) {
-    .Titulo {
+    main h1#Titulo {
         font-size: 200%;
     }
-    #capa1 {
+    main section#IngenieroCivil {
         margin-top: 10%;
     }
-    #IngenieroCivilh3 {
+    main section#IngenieroCivil h3 {
         font-size: 50%;
     }
-    #IngenieroCivilp {
+    main section#IngenieroCivil p {
         font-size: 40%;
     }
-    #capa2 {
-        margin-top: 20%;
+    main section#IngenieriaEstructural {
+        margin-top: 10%;
     }
-    #IngenieriaEstructuralh3 {
+    main section#IngenieriaEstructural h3 {
         font-size: 50%;
     }
-    #IngenieriaEstructuralp {
+    main section#IngenieriaEstructural p {
         font-size: 40%;
     }
-    #capa3 {
-        margin-top: 20%;
+    main section#Arquitecto {
+        margin-top: 10%;
     }
-    #Arquitectoh3 {
+    main section#Arquitecto h3 {
         font-size: 50%;
     }
-    #Arquitectop {
+    main section#Arquitecto p {
         font-size: 40%;
     }
 }

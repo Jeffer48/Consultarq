@@ -9,6 +9,8 @@ ul.Services {
     justify-content: space-around;
     padding: 0px;
     flex-wrap: wrap;
+    animation-duration: 4s;
+    animation-name: slideapper;
 }
 
 .ServiciosRes {
@@ -34,7 +36,7 @@ ul.Services {
     list-style: square;
 }
 
-.verMas{
+.verMas {
     float: right;
     font-variant: all-petite-caps;
 }
@@ -65,5 +67,11 @@ ul.Services {
 @media screen and (max-width: 460px) {
     section.ServiceSection {
         width: auto;
+    }
+}
+
+@keyframes slideapper {
+    0% {
+        opacity: 0;
     }
 }

@@ -1,95 +1,95 @@
+html,
 body {
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    height: 90%;
+    border-left: 60px solid #273362;
+    border-right: 60px solid #273362;
+    border-top: 5px solid #AFB5C6;
+    border-bottom: 5px solid #AFB5C6;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-#login {
-    width: 50%;
+form figure {
+    margin: 0%;
     margin-top: 1%;
-    /*margin-left: 10%;
-    margin-right: 10%;*/
+}
+
+form figure img#Logo {
+    margin-bottom: 10%;
+    width: 100%;
+    height: 50%;
+}
+
+form div.mb-3 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 100%;
+}
+
+form button#submit {
+    margin: 30% 15% 5% 15%;
 }
 
 
 /*    Colores     
  #AFB5C6 , #273362*/
 
-#cabezera {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-left: 60px solid #273362;
-    border-right: 60px solid #273362;
-    border-top: 5px solid #AFB5C6;
-    border-bottom: 5px solid #AFB5C6;
-}
 
-#Logo {
-    align-content: center;
-    width: 80%;
-    height: 20%;
-}
-
-#Nombre {
-    margin-top: 10%;
-    width: 90%;
-}
-
-#Contrasena {
-    margin-top: 10%;
-    width: 90%;
-}
-
-.OlvidarContrasena {
-    margin-bottom: 20%;
-}
-
-#Entrar {
-    margin-bottom: 20%;
-    width: 70%;
-    background-color: #AFB5C6;
-}
-
-@media screen and (max-width: 755px) {
-    #login {
-        width: 80%;
-        margin-top: 3%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    #login {
-        margin-top: 20%;
-        width: 100%;
-        margin-bottom: 3%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-    /*    Colores     
- #AFB5C6 , #273362*/
-    #cabezera {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-left: 25px solid #273362;
-        border-right: 25px solid #273362;
-        border-top: 2px solid #AFB5C6;
-        border-bottom: 2px solid #AFB5C6;
-    }
-    #Nombre {
-        margin-top: 20%;
-        width: 98%;
-    }
-    #Contrasena {
-        margin-top: 20%;
-        width: 98%;
-    }
-    #Entrar {
-        margin-bottom: 20%;
+/*
+@media screen and (max-width: 1600px) {
+    form {
         width: 70%;
-        background-color: #AFB5C6;
+        height: 90%;
+    }
+    form div.mb-3 {
+        margin: 15% 5% 0% 5%;
+    }
+    form button#submit {
+        margin: 30% 15% 5% 15%;
+    }
+}
+
+
+/*
+
+@media screen and (max-width: 999px) {
+    form {
+        width: 80%;
+        height: 90%;
+    }
+    form button#submit {
+        margin: 45% 15% 5% 15%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 90%;
+        height: 90%;
+    }
+    form button#submit {
+        margin: 55% 15% 5% 15%;
+    }
+}
+*/
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 90%;
+        height: 90%;
+        border-left: 35px solid #273362;
+        border-right: 35px solid #273362;
+        border-top: 3px solid #AFB5C6;
+        border-bottom: 3px solid #AFB5C6;
     }
 }

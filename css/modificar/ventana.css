@@ -1,4 +1,15 @@
 iframe {
-    height: 700px;
-    width: 80%;
+    height: 500px;
+    width: 70%;
+    margin-top: 2%;
+}
+
+header#banner {
+    background-color: #ebecf0;
+}
+
+nav a.navbar-brand img#logotipo {
+    width: 150px;
+    height: 40px;
+    margin-top: 1px;
 }

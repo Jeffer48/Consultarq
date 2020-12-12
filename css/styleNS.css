@@ -16,6 +16,8 @@ ul.OurServices {
     display: flex;
     justify-content: space-around;
     padding: 0px;
+    animation-duration: 4s;
+    animation-name: slideapper;
 }
 
 .NServicio {
@@ -99,5 +101,11 @@ img.NSImg {
 @media screen and (max-width: 300px) {
     .NServicio {
         font-size: medium;
+    }
+}
+
+@keyframes slideapper {
+    0% {
+        opacity: 0;
     }
 }

@@ -1,10 +1,16 @@
 <?php
 
     function solicitarDatos($consulta){
-        $conn = mysqli_connect('localhost','admin','AdminConsultarq#1');
+        $dir = "brtlwkmzk2huu3g0hgoj-mysql.services.clever-cloud.com";
+        $user = "ubheigpzt47ho6mv";
+        $pass = "7fZClODbr5rfrBa1tZDZ";
+
+        $conn = mysqli_connect($dir,$user,$pass);
         if(!$conn) echo 'Error al conectar';
 
-        $base = mysqli_select_db($conn,"consultarq"); //Especificar la conexión con la base Consultarq
+        $nombreBD = "brtlwkmzk2huu3g0hgoj";
+
+        $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
         $datos = mysqli_query($conn,$consulta); //Recibir la consulta
 
         mysqli_close($conn);

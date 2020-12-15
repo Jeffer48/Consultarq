@@ -1,31 +1,77 @@
-section.ServiceSection{
-    bottom: 10%;
+section.ServiceSection {
+    top: 55%;
     position: absolute;
     width: 100%;
 }
 
-ul.Services{
+ul.Services {
     display: flex;
     justify-content: space-around;
     padding: 0px;
+    flex-wrap: wrap;
+    animation-duration: 4s;
+    animation-name: slideapper;
 }
 
-.ServiciosRes{
+.ServiciosRes {
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 30px;
     border: 10px;
+    min-height: 25vh;
+    min-width: 40vh;
+    margin: 2vh;
 }
 
-.ServiciosRes h2{
+.ServiciosRes h2 {
     text-align: center;
 }
 
-.ServiciosRes ul{
+.ServiciosRes ul {
     align-items: center;
     padding: 0px;
 }
 
-.ServiciosRes li{
+.ServiciosRes li {
     list-style: square;
+}
+
+.verMas {
+    float: right;
+    font-variant: all-petite-caps;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../img/Inicio/Fondo-02.jpg);
+        background-size: 100% 100vh;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../img/Inicio/Fondo-01.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ServiciosRes h2 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    section.ServiceSection {
+        width: auto;
+    }
+}
+
+@keyframes slideapper {
+    0% {
+        opacity: 0;
+    }
 }

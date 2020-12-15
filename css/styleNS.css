@@ -2,23 +2,26 @@
 section.OurServicesSection {
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 12%;
 }
-    
-h1.OurServicesTitle{
+
+h1.OurServicesTitle {
     text-align: center;
     color: white;
-    font-size: 300%;
+    font-size: 500%;
+    /* margin: 0%;*/
 }
 
 ul.OurServices {
     display: flex;
     justify-content: space-around;
     padding: 0px;
+    animation-duration: 4s;
+    animation-name: slideapper;
 }
 
 .NServicio {
-    color: white;
+    color: white; 
     padding: 50px;
     border: 10px;
     text-align: justify;
@@ -34,12 +37,75 @@ img.NSImg {
     margin: auto;
 }
 
-@media screen and (max-width: 745px) {
-    section.OurServicesSection {
-        top: 20%;
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../img/NuestrosServicios/fondo-04-2.jpg);
+        background-size: 100% 100vh;
+        background-attachment: fixed;
     }
-    
-    #Fondo{
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../img//NuestrosServicios/fondo-04.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 745px) {
+
+    h1.OurServicesTitle {
+        margin: 0%;
+    }
+
+    section.OurServicesSection {
+        top: 14.5%;
+    }
+
+    /*  section.OurServicesSection {
+        top: 20%; Muy abajo lo cambie
+        top: 10%; Pero es lo mismo
+    }*/
+    #Fondo {
         height: 130%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    h1.OurServicesTitle {
+        width: fit-content;
+        font-size: -webkit-xxx-large;
+    }
+
+    ul.OurServices {
+        width: fit-content;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .NServicio {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .NServicio {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .NServicio {
+        font-size: medium;
+    }
+}
+
+@keyframes slideapper {
+    0% {
+        opacity: 0;
     }
 }

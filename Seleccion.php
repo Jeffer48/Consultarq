@@ -1,3 +1,22 @@
+<?php
+    //guardar Inicio
+    if(isset($_POST['guardarInicio'])){
+        include 'conexión.php';
+
+        $search = "-";
+        $replace = "/";
+        $IDC = substr($_POST['IngenieriaCostos'], 1);  $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
+        $GUA = substr($_POST['GestionUrbana'],1 );     $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $IDC);
+        $SDO = substr($_POST['SupervisionObra'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $IDC);
+        
+        $consulta = 'UPDATE inicio SET puntos="'.$IDC.'" WHERE servicio="INGENIERÍA DE COSTOS";'; guardarDatos($consulta);
+        $consulta = 'UPDATE inicio SET puntos="'.$GUA.'" WHERE servicio="GESTIÓN URBANA ASISTIDA";'; guardarDatos($consulta);
+        $consulta = 'UPDATE inicio SET puntos="'.$SDO.'" WHERE servicio="SUPERVISIÓN DE OBRA";'; guardarDatos($consulta);
+
+        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -15,10 +15,11 @@ header#banner {
     margin-top: 1px;
 }
 
+
 /*    Colores     
  #AFB5C6 , #273362*/
 
-#cartas {
+main form#cartas {
     margin: 5%;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
@@ -26,18 +27,16 @@ header#banner {
     grid-gap: 20px 40px;
 }
 
-.paginas {
-    width: 100%;
-    height: 95%;
-    margin: 0%;
-}
-
-
-
 .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.paginas {
+    width: 100%;
+    height: 95%;
+    margin: 0%;
 }
 
 .card:active {

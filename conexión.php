@@ -1,7 +1,20 @@
 <?php
 
     function solicitarDatos($consulta){
-        $dir = "brtlwkmzk2huu3g0hgoj-mysql.services.clever-cloud.com";
+        $dir = "localhost";
+        $user = "adminCA";
+        $pass = "Coms-Cc5.97";
+
+        $conn = mysqli_connect($dir,$user,$pass);
+        if(!$conn) echo 'Error al conectar';
+
+        $nombreBD = "adminca";
+
+        $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
+        $datos = mysqli_query($conn,$consulta); //Recibir la consulta
+
+        mysqli_close($conn);
+        /*$dir = "brtlwkmzk2huu3g0hgoj-mysql.services.clever-cloud.com";
         $user = "ubheigpzt47ho6mv";
         $pass = "7fZClODbr5rfrBa1tZDZ";
 
@@ -13,7 +26,7 @@
         $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
         $datos = mysqli_query($conn,$consulta); //Recibir la consulta
 
-        mysqli_close($conn);
+        mysqli_close($conn);*/
 
         return $datos;
     }

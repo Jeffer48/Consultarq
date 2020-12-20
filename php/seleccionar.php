@@ -2,14 +2,14 @@
     include 'conexión.php';
 
     if(isset($_POST['Inicio'])){
-        echo '<iframe src="index.php" frameborder="0"></iframe>';
-        $consulta = "SELECT * FROM inicio";
-        $datos = solicitarDatos($consulta);
+     echo '<iframe src="index.php" frameborder="0"></iframe>';
+     $consulta = "SELECT * FROM inicio";
+     $datos = solicitarDatos($consulta);
 
-        $servicio = array();
-        $puntos = array();
+     $servicio = array();
+     $puntos = array();
 
-        while($fila = mysqli_fetch_array($datos)){
+      while($fila = mysqli_fetch_array($datos)){
             array_push($servicio,$fila["servicio"]);
             array_push($puntos,$fila["puntos"]);
         }
@@ -21,7 +21,7 @@
 
         $textareas = array();
             //Imprimiendo
-        for($i = 0; $i < count($servicio); $i++){
+      for($i = 0; $i < count($servicio); $i++){
             $lista = explode("/",$puntos[$i]);
             $textos = $textarea[$i].''.$servicio[$i]."\n";
             for($c = 0; $c < count($lista); $c++){
@@ -30,8 +30,8 @@
             $textos = $textos.'</textarea>';
             array_push($textareas,$textos);
         }
-            $variable = '<form action="Modificar.php" method="post">'.$textareas[0].' '.$textareas[1].' '.$textareas[2].'</form>';
-            echo $variable;
+     $variable = '<form action="Modificar.php" method="post">'.$textareas[0].' '.$textareas[1].' '.$textareas[2].'</form>';
+     echo $variable;
 
     }
     if(isset($_POST['Contacto'])){
@@ -39,6 +39,31 @@
     }
     if(isset($_POST['FAQs'])){
         echo '<iframe src="FAQs.php" frameborder="0"></iframe>';
+                    
+        $consulta = "SELECT * FROM faqs";
+        $datos = solicitarDatos($consulta);
+
+        $preguntas = array();
+        $respuestas = array();
+        $numeracion = array();
+
+        while($fila = mysqli_fetch_array($datos)){
+            array_push($preguntas, $fila['Pregunta']);
+            array_push($respuestas, $fila['Respuesta']);
+            array_push($numeracion, $fila['idPreguntas']);
+        }
+
+        $textareas = array();
+        $variable = '<form action="Modificar.php" method="post">';
+
+        for($i = 0; $i < count($preguntas); $i++){
+            $pregunta = '<input type="text" name="pregunta'.$numeracion[$i].'" value="'.$preguntas[$i].'" >' ;
+            $respuesta = '<textarea name="respuesta'.$numeracion[$i].'" cols="30" rows="10">'.$respuestas[$i].'</textarea>';
+            $variable = $variable.'<div>'.$pregunta.''.$respuesta.'</div>';
+        }
+        $variable = $variable.'</form>';
+        echo $variable;
+
     }
     if(isset($_POST['NExpertos'])){
         echo '<iframe src="Nuestros_expertos.php" frameborder="0"></iframe>';

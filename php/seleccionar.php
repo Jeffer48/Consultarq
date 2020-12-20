@@ -14,8 +14,8 @@
             array_push($puntos,$fila["puntos"]);
         }
         $textarea = array(
-            '<textarea name="IngenieriaCostos" cols="30" rows="10">',
             '<textarea name="GestionUrbana" cols="30" rows="10">',
+            '<textarea name="IngenieriaCostos" cols="30" rows="10">',
             '<textarea name="SupervisionObra" cols="30" jrpws="10">'
         );
 
@@ -23,15 +23,16 @@
             //Imprimiendo
       for($i = 0; $i < count($servicio); $i++){
             $lista = explode("/",$puntos[$i]);
-            $textos = $textarea[$i].''.$servicio[$i]."\n";
+            $textos = $textarea[$i];
             for($c = 0; $c < count($lista); $c++){
-              $textos = $textos.'·'.$lista[$c]."\n";
+              $textos = $textos.'-'.$lista[$c]."\n";
             }
             $textos = $textos.'</textarea>';
             array_push($textareas,$textos);
         }
-     $variable = '<form action="Modificar.php" method="post">'.$textareas[0].' '.$textareas[1].' '.$textareas[2].'</form>';
-     echo $variable;
+            $variable = '<form action="Seleccion.php" method="POST">'.'<label>'.$servicio[0].'</label>'.$textareas[0].' '.'<label>'.$servicio[1].'</label>'.$textareas[1].' '.'<label>'.$servicio[2].'</label>'.$textareas[2];
+            $variable = $variable.'<div class="center"><input type="submit" name="guardarInicio" value="Guardar" class="btn brand z-depth-0"></div></form>';
+            echo $variable;
 
     }
     if(isset($_POST['Contacto'])){

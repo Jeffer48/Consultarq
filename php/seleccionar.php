@@ -58,6 +58,7 @@
 
         $textareas = array();
         $variable = '<form action="Seleccion.php" method="post">';
+        $boton = '<form action="Seleccion.php" class="botoncito" method="post">';
         $x;
         for($i = 0; $i < count($preguntas); $i++){
             $pregunta = '<input type="text" name="pregunta'.$numeracion[$i].'" value="'.$preguntas[$i].'" >' ;
@@ -65,12 +66,16 @@
             $variable = $variable.'<div>'.$pregunta.''.$respuesta.'</div>';
             $x=$i;
         }
+        $boton = $boton.'<div class="center"><input type="submit" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
         $variable = $variable.'<div class="center"><input type="submit" name="guardarFAQs" value="Guardar" class="btn brand z-depth-0"></div></form>';
-        $boton = '<div class="center"><input type="button" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
+        
 
         if(isset($_POST['nuevaPregunta'])){
-            echo '<iframe src="FAQs.php" frameborder="0"></iframe>';
-
+            echo "prueba";
+           // echo '<iframe src="FAQs.php" frameborder="0"></iframe>';
+            $pregunta = '<input type="text" name="pregunta'.$numeracion[$x+1].'" value="'.$preguntas[$x+1].'" >' ;
+            $respuesta = '<textarea name="respuesta'.$numeracion[$x+1].'" cols="30" rows="10">'.$respuestas[$x+1].'</textarea>';
+            $boton = $boton.'<div>'.$pregunta.''.$respuesta.'</div>';
         }
         //$variable = $variable.'</form>';
         echo $boton;

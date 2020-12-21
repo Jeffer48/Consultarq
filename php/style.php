@@ -70,6 +70,11 @@ main form {
     height: 100%;
 }
 
+main form.botoncito {
+    width: 30%;
+    height: auto;
+}
+
 main form div {
     width: 20%;
     height: 50%;

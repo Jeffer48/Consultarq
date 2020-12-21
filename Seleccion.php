@@ -55,6 +55,22 @@ if(isset($_POST['guardarNServicios'])){
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }
 
+    if(isset($_POST['nuevaPregunta'])){
+        include 'conexión.php';
+        $consulta = "SELECT idPreguntas FROM faqs";
+
+        $datos = solicitarDatos($consulta);
+
+        $numeracion = array();
+        
+        while($fila = mysqli_fetch_array($datos)){
+            array_push($numeracion, $fila['idPreguntas']);
+        }
+
+       $consulta = 'INSERT INTO faqs SET Pregunta="", Respuesta="" ;'; guardarDatos($consulta);      
+        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
+    }
+
 ?>
 
 <!DOCTYPE html>

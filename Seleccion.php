@@ -6,12 +6,28 @@
         $search = "-";
         $replace = "/";
         $IDC = substr($_POST['IngenieriaCostos'], 1);  $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
-        $GUA = substr($_POST['GestionUrbana'],1 );     $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $IDC);
-        $SDO = substr($_POST['SupervisionObra'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $IDC);
+        $GUA = substr($_POST['GestionUrbana'],1 );     $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $GUA);
+        $SDO = substr($_POST['SupervisionObra'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $SDO);
         
         $consulta = 'UPDATE inicio SET puntos="'.$IDC.'" WHERE servicio="INGENIERÍA DE COSTOS";'; guardarDatos($consulta);
         $consulta = 'UPDATE inicio SET puntos="'.$GUA.'" WHERE servicio="GESTIÓN URBANA ASISTIDA";'; guardarDatos($consulta);
         $consulta = 'UPDATE inicio SET puntos="'.$SDO.'" WHERE servicio="SUPERVISIÓN DE OBRA";'; guardarDatos($consulta);
+
+        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
+    }
+
+if(isset($_POST['guardarNServicios'])){
+        include 'conexión.php';
+
+        $search = "-";
+        $replace = "/";
+        $IDC = substr($_POST['IngenieriaCostos'], 1);  $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
+        $GUA = substr($_POST['GestionUrbana'],1 );     $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $GUA);
+        $SDO = substr($_POST['SupervisionObra'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $SDO);
+        
+        $consulta = 'UPDATE nuestrosservicios SET descripción="'.$IDC.'" WHERE servicio="INGENIERÍA DE COSTOS";'; guardarDatos($consulta);
+        $consulta = 'UPDATE nuestrosservicios SET descripción="'.$GUA.'" WHERE servicio="GESTIÓN URBANA ASISTIDA";'; guardarDatos($consulta);
+        $consulta = 'UPDATE nuestrosservicios SET descripción="'.$SDO.'" WHERE servicio="SUPERVISIÓN DE OBRA";'; guardarDatos($consulta);
 
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }

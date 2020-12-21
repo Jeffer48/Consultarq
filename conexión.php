@@ -2,7 +2,7 @@
 
     function solicitarDatos($consulta){
         $dir = "localhost";
-        $user = "consultarq";
+        $user = "Consultarq";
         $pass = "123";
 
         $conn = mysqli_connect($dir,$user,$pass);
@@ -38,7 +38,7 @@
 
     function guardarDatos($consulta){
         $dir = "localhost";
-        $user = "consultarq";
+        $user = "Consultarq";
         $pass = "123";
         $nombreBD = "consultarq";
 

@@ -54,16 +54,28 @@
             array_push($numeracion, $fila['idPreguntas']);
         }
 
-        $textareas = array();
-        $variable = '<form action="Modificar.php" method="post">';
+        
 
+        $textareas = array();
+        $variable = '<form action="Seleccion.php" method="post">';
+        $x;
         for($i = 0; $i < count($preguntas); $i++){
             $pregunta = '<input type="text" name="pregunta'.$numeracion[$i].'" value="'.$preguntas[$i].'" >' ;
             $respuesta = '<textarea name="respuesta'.$numeracion[$i].'" cols="30" rows="10">'.$respuestas[$i].'</textarea>';
             $variable = $variable.'<div>'.$pregunta.''.$respuesta.'</div>';
+            $x=$i;
         }
-        $variable = $variable.'</form>';
+        $variable = $variable.'<div class="center"><input type="submit" name="guardarFAQs" value="Guardar" class="btn brand z-depth-0"></div></form>';
+        $boton = '<div class="center"><input type="button" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
+
+        if(isset($_POST['nuevaPregunta'])){
+            echo '<iframe src="FAQs.php" frameborder="0"></iframe>';
+
+        }
+        //$variable = $variable.'</form>';
+        echo $boton;
         echo $variable;
+        
 
     }
     if(isset($_POST['NExpertos'])){

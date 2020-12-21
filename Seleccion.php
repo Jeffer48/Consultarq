@@ -17,6 +17,7 @@
     }
 
 if(isset($_POST['guardarNServicios'])){
+    
         include 'conexión.php';
 
         $search = "-";
@@ -31,6 +32,29 @@ if(isset($_POST['guardarNServicios'])){
 
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }
+
+    if(isset($_POST['guardarFAQs'])){
+        
+        include 'conexión.php';
+
+    
+        $consulta = "SELECT idPreguntas FROM faqs";
+                    $datos = solicitarDatos($consulta);
+
+                    $numeracion = array();
+                    
+                    while($fila = mysqli_fetch_array($datos)){
+                        array_push($numeracion, $fila['idPreguntas']);
+                    }
+
+        for($i = 0; $i < count($numeracion); $i++){
+            echo $pre = $_POST['pregunta'.$numeracion[$i]]; 
+            $res = $_POST['respuesta'.$numeracion[$i]];  
+            $consulta = 'UPDATE faqs SET Pregunta="'.$pre.'", Respuesta="'.$res.'" WHERE idPreguntas="'.$numeracion[$i].'";'; guardarDatos($consulta);      
+        } 
+        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
+    }
+
 ?>
 
 <!DOCTYPE html>

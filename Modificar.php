@@ -17,9 +17,6 @@
                   <img id="logotipo" src="img/logo-consultarq1.png" alt="logo" width="30" height="24">
               </a>
               <ul class="nav justify-content-end">
-                   <li class="nav-item">
-                      <a class="nav-link" href="#">Guardar</a>
-                  </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">Salir</a>
                   </li>

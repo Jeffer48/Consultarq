@@ -28,8 +28,9 @@
             }
             $textos = $textos.'</textarea>';
             array_push($textareas,$textos);
-        }
-            $variable = '<form action="Seleccion.php" method="POST">'.'<label>'.$servicio[0].'</label>'.$textareas[0].' '.'<label>'.$servicio[1].'</label>'.$textareas[1].' '.'<label>'.$servicio[2].'</label>'.$textareas[2];
+        }   
+            $nota = '<div>Agregue un guión entre cada punto en los servicios.</div>';
+            $variable = '<form action="Seleccion.php" method="POST">'.$nota.'<label>'.$servicio[0].'</label>'.$textareas[0].' '.'<label>'.$servicio[1].'</label>'.$textareas[1].' '.'<label>'.$servicio[2].'</label>'.$textareas[2];
             $variable = $variable.'<div class="center"><input type="submit" name="guardarInicio" value="Guardar" class="btn brand z-depth-0"></div></form>';
             echo $variable;
 
@@ -60,8 +61,9 @@
             <button href="Modificar.php" class="btn-abrir-popup" name="Borrar" >Borrar</button>
             <button href="Modificar.php" class="btn-abrir-popup" name="guardarFAQs" >Guardar</button>
         </div>
-        <div class="datos">
-        ';
+        <div class="datos">';
+
+
         for($i = 0; $i < count($preguntas); $i++){
             $pregunta = '<input type="text" name="pregunta'.$numeracion[$i].'" value="'.$preguntas[$i].'" >' ;
             $respuesta = '<textarea name="respuesta'.$numeracion[$i].'" cols="30" rows="10">'.$respuestas[$i].'</textarea>';

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/modificar/seleccion.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!--<script src="js/Modificar.js" type="module"></script>-->
 </head>
 
 <body>

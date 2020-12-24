@@ -31,8 +31,8 @@ ul.OurServices {
     text-align: center;
 }
 
-img.NSImg {
-    width: 80%;
+.NSImg {
+    width: 35vh;
     display: block;
     margin: auto;
 }

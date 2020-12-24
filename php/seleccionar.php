@@ -1,5 +1,4 @@
 <?php
-    include 'conexión.php';
 
     if(isset($_POST['Inicio'])){
      echo '<iframe src="index.php" frameborder="0"></iframe>';
@@ -54,28 +53,25 @@
             array_push($numeracion, $fila['idPreguntas']);
         }
 
-        
-
         $textareas = array();
-        $variable = '<form action="Seleccion.php" method="post">';
-        $x;
+        $variable = '<form id="modificacion" action="Modificar.php" method="post">
+        <div class="menu">
+            <button href="Modificar.php" class="btn-abrir-popup" name="nuevaPregunta" >Crear</button>
+            <button href="Modificar.php" class="btn-abrir-popup" name="Borrar" >Borrar</button>
+            <button href="Modificar.php" class="btn-abrir-popup" name="guardarFAQs" >Guardar</button>
+        </div>
+        <div class="datos">
+        ';
         for($i = 0; $i < count($preguntas); $i++){
             $pregunta = '<input type="text" name="pregunta'.$numeracion[$i].'" value="'.$preguntas[$i].'" >' ;
             $respuesta = '<textarea name="respuesta'.$numeracion[$i].'" cols="30" rows="10">'.$respuestas[$i].'</textarea>';
             $variable = $variable.'<div>'.$pregunta.''.$respuesta.'</div>';
-            $x=$i;
         }
-        $variable = $variable.'<div class="center"><input type="submit" name="guardarFAQs" value="Guardar" class="btn brand z-depth-0"></div></form>';
-        $boton = '<div class="center"><input type="button" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
-
-        if(isset($_POST['nuevaPregunta'])){
-            echo '<iframe src="FAQs.php" frameborder="0"></iframe>';
-
-        }
-        //$variable = $variable.'</form>';
-        echo $boton;
+        //$variable = $variable.'<div class="center"><input type="submit" name="guardarFAQs" value="Guardar" class="btn brand z-depth-0"></div></form>';
+        //$boton = '<div class="center"><input type="button" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
+        $variable = $variable.'</div></form>';
+        //echo $boton;
         echo $variable;
-        
 
     }
     if(isset($_POST['NExpertos'])){
@@ -120,5 +116,42 @@
         echo '<iframe src="SobreNosotros.php" frameborder="0"></iframe>';
     }
 
+    function FAQs(){
+        echo '<iframe src="FAQs.php" frameborder="0"></iframe>';
+                    
+        $consulta = "SELECT * FROM faqs";
+        $datos = solicitarDatos($consulta);
+
+        $preguntas = array();
+        $respuestas = array();
+        $numeracion = array();
+
+        while($fila = mysqli_fetch_array($datos)){
+            array_push($preguntas, $fila['Pregunta']);
+            array_push($respuestas, $fila['Respuesta']);
+            array_push($numeracion, $fila['idPreguntas']);
+        }
+
+        $textareas = array();
+        $variable = '<form id="modificacion" action="Modificar.php" method="post">
+        <div class="menu">
+            <button href="Modificar.php" class="btn-abrir-popup" name="nuevaPregunta" >Crear</button>
+            <button href="Modificar.php" class="btn-abrir-popup" name="Borrar" >Borrar</button>
+            <button href="Modificar.php" class="btn-abrir-popup" name="guardarFAQs" >Guardar</button>
+        </div>
+        <div class="datos">
+        ';
+        for($i = 0; $i < count($preguntas); $i++){
+            $pregunta = '<input type="text" name="pregunta'.$numeracion[$i].'" value="'.$preguntas[$i].'" >' ;
+            $respuesta = '<textarea name="respuesta'.$numeracion[$i].'" cols="30" rows="10">'.$respuestas[$i].'</textarea>';
+            $variable = $variable.'<div>'.$pregunta.''.$respuesta.'</div>';
+        }
+        //$variable = $variable.'<div class="center"><input type="submit" name="guardarFAQs" value="Guardar" class="btn brand z-depth-0"></div></form>';
+        //$boton = '<div class="center"><input type="button" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
+        $variable = $variable.'</div></form>';
+        //echo $boton;
+        echo $variable;
+
+    }
 
 ?>

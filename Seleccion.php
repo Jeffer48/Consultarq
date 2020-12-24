@@ -1,62 +1,3 @@
-<?php
-    //guardar Inicio
-    if(isset($_POST['guardarInicio'])){
-        include 'conexión.php';
-
-        $search = "-";
-        $replace = "/";
-        $IDC = substr($_POST['IngenieriaCostos'], 1);  $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
-        $GUA = substr($_POST['GestionUrbana'],1 );     $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $GUA);
-        $SDO = substr($_POST['SupervisionObra'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $SDO);
-        
-        $consulta = 'UPDATE inicio SET puntos="'.$IDC.'" WHERE servicio="INGENIERÍA DE COSTOS";'; guardarDatos($consulta);
-        $consulta = 'UPDATE inicio SET puntos="'.$GUA.'" WHERE servicio="GESTIÓN URBANA ASISTIDA";'; guardarDatos($consulta);
-        $consulta = 'UPDATE inicio SET puntos="'.$SDO.'" WHERE servicio="SUPERVISIÓN DE OBRA";'; guardarDatos($consulta);
-
-        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
-    }
-
-if(isset($_POST['guardarNServicios'])){
-    
-        include 'conexión.php';
-
-        $search = "-";
-        $replace = "/";
-        $IDC = substr($_POST['IngenieriaCostos'], 1);  $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
-        $GUA = substr($_POST['GestionUrbana'],1 );     $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $GUA);
-        $SDO = substr($_POST['SupervisionObra'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $SDO);
-        
-        $consulta = 'UPDATE nuestrosservicios SET descripción="'.$IDC.'" WHERE servicio="INGENIERÍA DE COSTOS";'; guardarDatos($consulta);
-        $consulta = 'UPDATE nuestrosservicios SET descripción="'.$GUA.'" WHERE servicio="GESTIÓN URBANA ASISTIDA";'; guardarDatos($consulta);
-        $consulta = 'UPDATE nuestrosservicios SET descripción="'.$SDO.'" WHERE servicio="SUPERVISIÓN DE OBRA";'; guardarDatos($consulta);
-
-        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
-    }
-
-    if(isset($_POST['guardarFAQs'])){
-        
-        include 'conexión.php';
-
-    
-        $consulta = "SELECT idPreguntas FROM faqs";
-                    $datos = solicitarDatos($consulta);
-
-                    $numeracion = array();
-                    
-                    while($fila = mysqli_fetch_array($datos)){
-                        array_push($numeracion, $fila['idPreguntas']);
-                    }
-
-        for($i = 0; $i < count($numeracion); $i++){
-            echo $pre = $_POST['pregunta'.$numeracion[$i]]; 
-            $res = $_POST['respuesta'.$numeracion[$i]];  
-            $consulta = 'UPDATE faqs SET Pregunta="'.$pre.'", Respuesta="'.$res.'" WHERE idPreguntas="'.$numeracion[$i].'";'; guardarDatos($consulta);      
-        } 
-        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,9 +17,6 @@ if(isset($_POST['guardarNServicios'])){
                   <img id="logotipo" src="img/logo-consultarq1.png" alt="logo" width="30" height="24">
               </a>
               <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Perfil</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Salir</a>
                 </li>

@@ -5,7 +5,7 @@ nav a.navbar-brand img#logotipo {
     margin-top: 1px;
 }
 
-<?php if(isset($_POST['FAQs']) || isset($_POST['Salir']) || isset($_POST['Borrar']) || isset($_POST['guardarFAQs']) || isset($_POST['Crear'])):  ?>
+<?php if(isset($_POST['FAQs']) || isset($_POST['Salir']) || isset($_POST['guardarFAQs']) || isset($_POST['Crear']) || isset($_POST['BorrarPreguntas'])):  ?>
     body, html{
         height: 100%;
         width: 100%;
@@ -103,7 +103,7 @@ nav a.navbar-brand img#logotipo {
     }
 <?php endif; ?>
 
-<?php if(isset($_POST['nuevaPregunta'])):  ?>
+<?php if(isset($_POST['nuevaPregunta']) || isset($_POST['Borrar'])):  ?>
     body, html{
         height: 100%;
         width: 100%;
@@ -155,6 +155,7 @@ nav a.navbar-brand img#logotipo {
         justify-content: center;
         flex-wrap: wrap;
     }
+
     main form div.datos div{
         margin: 4% 2% 0% 2%;
     }
@@ -164,12 +165,15 @@ nav a.navbar-brand img#logotipo {
         height: 90%;
         resize:none;
     }
+
     main form input {
         width: 100%;
     }
+
     main form#modificacion input {
         width: 100%;
     }
+
     .overlay{
         background: rgba(0,0,0,.3);
         position: fixed;
@@ -214,4 +218,14 @@ nav a.navbar-brand img#logotipo {
 
 <?php endif; ?>
 
+<?php if(isset($_POST['Borrar'])):  ?>
+    .popup form#popupform div#checkbox{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .popup form#popupform div#checkbox input{
+        width: 10%;
+    }
+<?php endif; ?>
 </style>

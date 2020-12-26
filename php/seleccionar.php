@@ -148,12 +148,29 @@
             $respuesta = '<textarea name="respuesta'.$numeracion[$i].'" cols="30" rows="10">'.$respuestas[$i].'</textarea>';
             $variable = $variable.'<div>'.$pregunta.''.$respuesta.'</div>';
         }
-        //$variable = $variable.'<div class="center"><input type="submit" name="guardarFAQs" value="Guardar" class="btn brand z-depth-0"></div></form>';
-        //$boton = '<div class="center"><input type="button" name="nuevaPregunta" value="nueva" class="btn brand z-depth-0"></div></form>';
         $variable = $variable.'</div></form>';
-        //echo $boton;
         echo $variable;
 
+    }
+
+    function borrar(){
+        $consulta = "SELECT idPreguntas, Pregunta FROM faqs";
+        $datos = solicitarDatos($consulta);
+
+        $preguntas = array();
+        $numeracion = array();
+
+        while($fila = mysqli_fetch_array($datos)){
+         array_push($numeracion, $fila['idPreguntas']);
+         array_push($preguntas, $fila['Pregunta']);
+        }
+        $SeleccionarPre ='';
+        for($i = 0; $i < count($preguntas); $i++){
+             $SeleccionarPre = $SeleccionarPre.'<label>
+             <input type="checkbox" name="numero'.$numeracion[$i].'" value="opcion">'.
+             $preguntas[$i].'</label>';
+        }
+        return $SeleccionarPre;
     }
 
 ?>

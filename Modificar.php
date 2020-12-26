@@ -2,6 +2,7 @@
   include 'conexión.php';
   include 'php/update.php';
   include 'php/insert.php';
+  include 'php/delete.php';
 ?>
 
 <!DOCTYPE html>
@@ -55,8 +56,30 @@
             ';
             echo $popup;
           }
-          if(isset($_POST['Salir']) || isset($_POST['Borrar']) || isset($_POST['guardarFAQs'])
-          || isset($_POST['Crear'])){
+          if(isset($_POST['Borrar'])){
+              FAQs();
+              $PreguntaSel = borrar();
+            $popup = '
+            <div class="overlay">
+                <div class = "popup">
+                    <form id="popupform" action="Modificar.php" method="post">
+                        <h3>Borrar preguntas</h3>
+                        <h4>Seleccione la pregunta</h4>
+                        <div id="checkbox">'.
+                        $PreguntaSel
+                        .'</div>
+                        <div class="contenedor-inputs">
+                            <input type="submit" class="btn-submit" name="BorrarPreguntas" value="Borrar">
+                            <input type="submit" class="btn-submit" name="Salir" value="Salir">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            ';
+            echo $popup;
+          }
+          if(isset($_POST['Salir']) || isset($_POST['guardarFAQs']) || isset($_POST['Crear'])
+          || isset($_POST['BorrarPreguntas'])){
             FAQs();
           }
 

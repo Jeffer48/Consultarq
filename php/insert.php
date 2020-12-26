@@ -7,7 +7,7 @@ if(isset($_POST['Crear'])){
     guardarDatos($consulta);
     
 
-    echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
+    echo "<script type='text/javascript'>alert('Pregunta creada correctamente');</script>";
 }
 
 ?>

@@ -1,3 +1,16 @@
+<?php
+if(isset($_POST['submit'])){
+    $correo    = 'cristianenano99@gmail.com';
+    $asunto    = 'solicitud de proyecto';
+    $mensaje = 'Nombre: '.$_POST['Nombre']."\n".
+               'Categoria: '.$_POST['categoria']."\n".
+               'telefono: '.$_POST['tel']."\n".
+               'email: '.$_POST['email']."\n".
+               'mensaje: '.$_POST['msg'];
+
+    mail($correo,$asunto,$mensaje); 
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,13 +34,13 @@
             <h1 id="titulo">CONTÁCTANOS</h1>
             <p>En CONSULTARQ nos interesas, por favor llena el siguiente formulario <br> y te atenderemos lo más pronto posible.</p>
         </section>
-        <form action="" method="post">
+        <form action="contacto.php" method="post">
             <ul class="form">
-                <li><input type="text" id="name" name="Nombre" placeholder="Nombre"></li>
-                <li><input type="text" id="categoria" name="categoria" placeholder="Categoria"></li>
-                <li><input type="number" id="tel" name="tel" placeholder="Teléfono"></li>
-                <li><input type="email" id="email" name="email" placeholder="E-mail"></li>
-                <li class="msg"><textarea id="msg" name="msg" placeholder="Mensaje" style="height: 100%"></textarea></li>
+                <li><input type="text"    id="name"       name="Nombre"    placeholder="Nombre"></li>
+                <li><input type="text"    id="categoria"  name="categoria" placeholder="Categoria"></li>
+                <li><input type="number"  id="tel"        name="tel"       placeholder="Teléfono"></li>
+                <li><input type="email"   id="email"      name="email"     placeholder="E-mail"></li>
+                <li class="msg"><textarea id="msg"        name="msg"       placeholder="Mensaje" style="height: 100%"></textarea></li>
                 <li class="submitLi"><input type="submit" name="submit" value="enviar" class="boton"></li>
             </ul>
         </form>

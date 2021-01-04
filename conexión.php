@@ -1,49 +1,34 @@
 <?php
+/*
+    $dir = "brtlwkmzk2huu3g0hgoj-mysql.services.clever-cloud.com";
+    $user = "ubheigpzt47ho6mv";
+    $pass = "7fZClODbr5rfrBa1tZDZ";
+    $nombreBD = "brtlwkmzk2huu3g0hgoj";
+*/
+    $dir = "localhost";
+    $user = "admin";
+    $pass = "AdminConsultarq#1";
+    $nombreBD = "consultarq";
 
     function solicitarDatos($consulta){
-        $dir = "localhost";
-        $user = "adminCA";
-        $pass = "Coms-Cc5.97";
+        global $dir, $user, $pass, $nombreBD;
 
         $conn = mysqli_connect($dir,$user,$pass);
         if(!$conn) echo 'Error al conectar';
-
-        $nombreBD = "adminca";
 
         $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
         $datos = mysqli_query($conn,$consulta); //Recibir la consulta
 
         mysqli_close($conn);
-        /*$dir = "brtlwkmzk2huu3g0hgoj-mysql.services.clever-cloud.com";
-        $user = "ubheigpzt47ho6mv";
-        $pass = "7fZClODbr5rfrBa1tZDZ";
-
-        $dir = "localhost";
-        $user = "admin";
-        $pass = "AdminConsultarq#1";
-
-        $conn = mysqli_connect($dir,$user,$pass);
-        if(!$conn) echo 'Error al conectar';
-
-        $nombreBD = "brtlwkmzk2huu3g0hgoj";
-        $nombreBD = "consultarq";
-
-        $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
-        $datos = mysqli_query($conn,$consulta); //Recibir la consulta
-
-        mysqli_close($conn);*/
-
         return $datos;
     }
 
     function guardarDatos($consulta){
-        $dir = "localhost";
-        $user = "adminCA";
-        $pass = "Coms-Cc5.97";
-        $nombreBD = "adminca";
+        global $dir, $user, $pass, $nombreBD;
 
         $conn = mysqli_connect($dir,$user,$pass);
         $base = mysqli_select_db($conn,$nombreBD);
+        
         mysqli_query($conn,$consulta);
         mysqli_close($conn);
     }

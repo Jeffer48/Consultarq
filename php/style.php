@@ -81,7 +81,6 @@ nav a.navbar-brand img#logotipo {
         display:flex;
         height: 80%;
         width: 100%;
-        background-color: #ebecf0;
     }
 
     main iframe {

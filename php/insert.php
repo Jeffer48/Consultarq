@@ -10,4 +10,5 @@ if(isset($_POST['Crear'])){
     echo "<script type='text/javascript'>alert('Pregunta creada correctamente');</script>";
 }
 
+
 ?>

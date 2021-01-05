@@ -12,8 +12,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <?php include 'php/style.php'; ?>
     <title>Modificacion</title>
-    <?php include 'php/style.php'  ?>
 </head>
 
 <body>

@@ -45,7 +45,10 @@ main form#cartas {
     transform: transform 0.2s;
 }
 
-
+.Visitas{
+    display: flex;
+    text-align: center;
+}
 
 @media screen and (max-width: 1000px) {
     main form#cartas {

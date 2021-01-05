@@ -51,3 +51,22 @@ if(isset($_POST['submit'])){
 </body>
 
 </html>
+
+<?php
+    include 'conexión.php';
+
+    function contador(){
+        $queryObtener = "SELECT contador FROM visitas WHERE pagina = 'contacto';";
+        $respuesta = solicitarDatos($queryObtener);
+        $vistas = mysqli_fetch_array($respuesta);
+        $contador = $vistas[0] + 1;
+
+        $queryGuardar = "UPDATE visitas SET contador = '$contador' WHERE pagina = 'contacto';";
+        guardarDatos($queryGuardar);
+        
+        return $contador;
+    }
+
+    $visitante = contador();
+    echo "Eres el visitante: ".$visitante;
+?>

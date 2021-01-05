@@ -77,3 +77,20 @@
 </body>
 
 </html>
+
+<?php
+    function contador(){
+        $queryObtener = "SELECT contador FROM visitas WHERE pagina = 'faqs';";
+        $respuesta = solicitarDatos($queryObtener);
+        $vistas = mysqli_fetch_array($respuesta);
+        $contador = $vistas[0] + 1;
+
+        $queryGuardar = "UPDATE visitas SET contador = '$contador' WHERE pagina = 'faqs';";
+        guardarDatos($queryGuardar);
+        
+        return $contador;
+    }
+
+    $visitante = contador();
+    echo "Eres el visitante: ".$visitante;
+?>

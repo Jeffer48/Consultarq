@@ -54,6 +54,58 @@
            </button>
 
       </form>
+
+      <?php
+        include 'conexión.php';
+
+        $vInicio = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'inicio';"));
+        $vContacto = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'contacto';"));
+        $vFaqs = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'faqs';"));
+        $vNuestrosServicios = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'nuestrosServicios';"));
+        $vNuestrosExpertos = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'nuestrosExpertos';"));
+        $vSobreNosotros = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'sobreNosotros';"));
+
+        echo '<div>
+        <ul class="Visitas">
+            <li>
+                <ul>
+                    <li>Inicio</li>
+                    <li>'.$vInicio[0].'</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>FAQs</li>
+                    <li>'.$vFaqs[0].'</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>Contacto</li>
+                    <li>'.$vContacto[0].'</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>Nuestros Servicios</li>
+                    <li>'.$vNuestrosServicios[0].'</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>Nuestros Expertos</li>
+                    <li>'.$vNuestrosExpertos[0].'</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>Sobre Nosotros</li>
+                    <li>'.$vSobreNosotros[0].'</li>
+                </ul>
+            </li>
+        </ul>
+      </div>';
+      ?>
   </main>
 
 </body>

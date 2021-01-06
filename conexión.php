@@ -6,8 +6,13 @@
     $nombreBD = "brtlwkmzk2huu3g0hgoj";
 */
     $dir = "localhost";
+<<<<<<< HEAD
     $user = "adminCA";
     $pass = "Coms-Cc5.97";
+=======
+    $user = "consultarq";
+    $pass = "1234";
+>>>>>>> f3bbd1d97bc119f704cc81852b201730dc77f7a9
     $nombreBD = "consultarq";
 
     function solicitarDatos($consulta){

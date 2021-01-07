@@ -1,19 +1,13 @@
 <?php
 
 $Nombre = $categoria = $tel = $email =$msg = '';
+$correo    = 'alejandraponcearellano15@gmail.com';
+$asunto    = 'Solicitud de proyecto';
+$mensaje = '';
 
 $errores = array('nombreError'=>'', 'categoriaError'=>'', 'telError'=>'', 'emailError'=>'', 'msgError'=>'');
 
 if(isset($_POST['submit'])){
-    
-    $correo    = 'alejandraponcearellano15@gmail.com';
-    $asunto    = 'Solicitud de proyecto';
-    $mensaje = 'Nombre: '.$_POST['Nombre']."\n".
-               'Categoría: '.$_POST['categoria']."\n".
-               'Teléfono: '.$_POST['tel']."\n".
-               'Email: '.$_POST['email']."\n".
-               'Mensaje: '.$_POST['msg'];
-                '';
     
     if(empty($_POST['Nombre'])){
             $errores['nombreError'] = 'El nombre es requerido';
@@ -23,7 +17,7 @@ if(isset($_POST['submit'])){
             if(!preg_match('/^([a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+)(\s*[a-zA-ZZñÑáéíóúÁÉÍÓÚ\s]*)*$/',$Nombre)){
                 $errores['nombreError'] = "El nombre $Nombre no es válido";
             }else{
-			  $mensaje = $mensaje.'Nombre: '.$Nombre;
+			  $mensaje = $mensaje.'Nombre: '.$Nombre."\n";
 		  }
         }
     
@@ -35,7 +29,7 @@ if(isset($_POST['submit'])){
             if(!preg_match('/^([a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+)(\s*[a-zA-ZZñÑáéíóúÁÉÍÓÚ\s]*)*$/',$categoria)){
                 $errores['categoriaError'] = "La categoría $categoria no es válido";
             }else{
-			  $mensaje = $mensaje.'Categoría: '.$categoria;
+			  $mensaje = $mensaje.'Categoría: '.$categoria."\n";
 		  }
         }
     
@@ -47,7 +41,7 @@ if(isset($_POST['submit'])){
             if(!preg_match('/^(\(\+?\d{2,3}\)[\*|\s|\-|\.]?(([\d][\*|\s|\-|\.]?){6})(([\d][\s|\-|\.]?){2})?|(\+?[\d][\s|\-|\.]?){8}(([\d][\s|\-|\.]?){2}(([\d][\s|\-|\.]?){2})?)?)$/',$tel)){
                 $errores['telError'] = "El numero de teléfono $tel no es válido";
             }else{
-			  $mensaje = $mensaje.'Teléfono: '.$tel;
+			  $mensaje = $mensaje.'Teléfono: '.$tel."\n";
 		  }
         }
     
@@ -59,7 +53,7 @@ if(isset($_POST['submit'])){
             if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 $errores['emailError'] = 'Escribe un correo válido';
             } else{
-			  $mensaje = $mensaje.'Email: '.$email;
+			  $mensaje = $mensaje.'Email: '.$email."\n";
 		  }
         }
     
@@ -68,11 +62,18 @@ if(isset($_POST['submit'])){
         }else{
             $msg = $_POST['msg'];
        
-            $mensaje = $mensaje.'Mensaje: '.$msg;
-		  }
-       
-
-    mail($correo,$asunto,$mensaje); 
+            $mensaje = $mensaje.'Mensaje: '.$msg."\n"
+            ;
+    }
+    if(!empty($_POST['Nombre']) && !empty($_POST['categoria']) && !empty($_POST['tel'])
+    && !empty($_POST['email']) && !empty($_POST['msg'])){
+        if(preg_match('/^([a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+)(\s*[a-zA-ZZñÑáéíóúÁÉÍÓÚ\s]*)*$/',$categoria) &&
+         preg_match('/^(\(\+?\d{2,3}\)[\*|\s|\-|\.]?(([\d][\*|\s|\-|\.]?){6})(([\d][\s|\-|\.]?){2})?|(\+?[\d][\s|\-|\.]?){8}(([\d][\s|\-|\.]?){2}(([\d][\s|\-|\.]?){2})?)?)$/',$tel)
+         && filter_var($email, FILTER_VALIDATE_EMAIL)){
+            //echo 'este es el mensaje  '.$mensaje;
+            mail($correo,$asunto,$mensaje); 
+        }
+    }
 }
 
 ?>
@@ -130,6 +131,7 @@ if(isset($_POST['submit'])){
 
 <?php
     include 'conexión.php';
+    include 'php/contadorMes.php';
 
     function contador(){
         $queryObtener = "SELECT contador FROM visitas WHERE pagina = 'contacto';";
@@ -139,10 +141,8 @@ if(isset($_POST['submit'])){
 
         $queryGuardar = "UPDATE visitas SET contador = '$contador' WHERE pagina = 'contacto';";
         guardarDatos($queryGuardar);
-        
-        return $contador;
+        contadorContacto();
     }
-
-    $visitante = contador();
-    echo "Eres el visitante: ".$visitante;
+     contador();
+    /*echo "Eres el visitante: ".$visitante;*/
 ?>

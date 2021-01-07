@@ -57,6 +57,7 @@
 
       <?php
         include 'conexión.php';
+        
 
         $vInicio = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'inicio';"));
         $vContacto = mysqli_fetch_array(solicitarDatos("SELECT contador FROM visitas WHERE pagina = 'contacto';"));
@@ -105,7 +106,11 @@
             </li>
         </ul>
       </div>';
+      
       ?>
+      
+      <img id="estadisticas" src="linear_plot.php" alt="">
+
   </main>
 
 </body>

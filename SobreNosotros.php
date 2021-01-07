@@ -61,6 +61,7 @@
 
 <?php
     include 'conexión.php';
+    include 'php/contadorMes.php';
 
     function contador(){
         $queryObtener = "SELECT contador FROM visitas WHERE pagina = 'sobreNosotros';";
@@ -70,10 +71,7 @@
 
         $queryGuardar = "UPDATE visitas SET contador = '$contador' WHERE pagina = 'sobreNosotros';";
         guardarDatos($queryGuardar);
-        
-        return $contador;
+        contadorSNosotros();
     }
-
-    $visitante = contador();
-    echo "Eres el visitante: ".$visitante;
+    contador();
 ?>

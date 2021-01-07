@@ -50,6 +50,18 @@ main form#cartas {
     text-align: center;
 }
 
+body img#estadisticas{
+    width: 90%;
+    height: 700px;
+    margin: 0% 5% 0% 5%;
+}
+
+body div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 @media screen and (max-width: 1000px) {
     main form#cartas {
         grid-template-columns: 2fr 2fr;

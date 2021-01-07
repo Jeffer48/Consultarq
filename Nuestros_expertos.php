@@ -50,6 +50,7 @@
 
 <?php
     include 'conexión.php';
+    include 'php/contadorMes.php';
 
     function contador(){
         $queryObtener = "SELECT contador FROM visitas WHERE pagina = 'nuestrosExpertos';";
@@ -59,8 +60,7 @@
 
         $queryGuardar = "UPDATE visitas SET contador = '$contador' WHERE pagina = 'nuestrosExpertos';";
         guardarDatos($queryGuardar);
-        
-        return $contador;
+        contadorNExpertos();
     }
 
     $visitante = contador();

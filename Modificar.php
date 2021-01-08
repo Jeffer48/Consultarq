@@ -33,7 +33,8 @@
   </header>
     <main>
       <?php
-          include 'php/seleccionar.php';
+      include 'php/seleccionar.php';
+
           if(isset($_POST['nuevaPregunta'])){
               FAQs();
             $popup = '
@@ -82,7 +83,8 @@
           || isset($_POST['BorrarPreguntas'])){
             FAQs();
           }
-
+          if(isset($_POST['guardarInicio'])){Inicio();}
+          if(isset($_POST['guardarNServicios'])){NServicios();}
        ?>
    </main>
 </body>

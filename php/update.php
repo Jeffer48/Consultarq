@@ -14,7 +14,6 @@
 
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }
-
     if(isset($_POST['guardarNServicios'])){
 
             $search = "-";
@@ -49,5 +48,8 @@
         } 
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }
-
+//-Cierres administrativos de contratos de obra.
+/*
+-Consectetur enim nesciunt porro corrupti vel veniam cupiditate vero ipsum expedita optio earum asperiores aliquid quae fuga odio eum dolorem a rem, praesentium doloremque ut, numquam eius ipsa! Illo, repudiandae!
+*/
 ?>

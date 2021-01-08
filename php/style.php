@@ -71,7 +71,7 @@ nav a.navbar-brand img#logotipo {
     }
 <?php endif; ?>
     
-<?php if(isset($_POST['NServicios']) || isset($_POST['NExpertos']) || isset($_POST['Inicio'])):  ?>
+<?php if(isset($_POST['NServicios']) || isset($_POST['NExpertos']) || isset($_POST['Inicio']) || isset($_POST['guardarInicio']) || isset($_POST['guardarNServicios'])):  ?>
     body, html{
         height: 100%;
         width: 100%;

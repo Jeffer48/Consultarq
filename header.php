@@ -10,23 +10,23 @@
                         <a class="nav-link" href="index.php">INICIO<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.php">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="FAQs.php">FAQ´S</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="Nuestros_servicios.php">NUESTROS SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SobreNosotros.php">SOBRE NOSOTROS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Nuestros_expertos.php">NUESTROS EXPERTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="SobreNosotros.php">SOBRE NOSOTROS</a>
+                        <a class="nav-link" href="FAQs.php">FAQ´S</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.php">CONTACTO</a>
                     </li>
                 </ul>
             </div>
-            <a class="navbar-brand" href="#"><img src="img/Inicio/letras%20logo-04.png" alt="Logo"></a>
+            <a class="navbar-brand" href="index.php"><img src="img/Inicio/letras%20logo-04.png" alt="Logo"></a>
             <div class="sectionRedes">
                 <ul class="redes">
                     <li><a href="https://www.facebook.com/ConsultArq-101097018429982" target="_blank"><img src="img/Inicio/icono%20face-01.png" alt="Facebook"></li></a>

@@ -1,4 +1,14 @@
 <?php
+    session_start();
+
+    if(!$_SESSION['user']){
+        echo "<script>window.alert('Inicie sesión primero')</script>";
+
+        echo "<script> 
+        window.location.replace('Login.php'); 
+        </script>";
+    }
+
   include 'conexión.php';
   include 'php/update.php';
   include 'php/insert.php';
@@ -26,6 +36,9 @@
               <ul class="nav justify-content-end">
                   <li class="nav-item">
                       <a class="nav-link" href="Seleccion.php">Salir</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="logout.php">Cerrar sesión</a>
                   </li>
               </ul>
          </div>

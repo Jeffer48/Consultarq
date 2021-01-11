@@ -88,7 +88,6 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/styleContacto.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="js/scriptContacto.js" defer type="text/javascript"></script>
     <meta name="viewport" content="width=devicewidth,initial-scale=1">
 </head>

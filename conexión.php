@@ -6,8 +6,8 @@
     $nombreBD = "brtlwkmzk2huu3g0hgoj";
 */
     $dir = "localhost";
-    $user = "adminCA";
-    $pass = "Coms-Cc5.97";
+    $user = "admin";
+    $pass = "AdminConsultarq#1";
     $nombreBD = "consultarq";
 
     function solicitarDatos($consulta){
@@ -15,12 +15,13 @@
 
         $conn = mysqli_connect($dir,$user,$pass);
         if(!$conn) echo 'Error al conectar';
+        else{
+            $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
+            $datos = mysqli_query($conn,$consulta); //Recibir la consulta
 
-        $base = mysqli_select_db($conn,$nombreBD); //Especificar la conexión con la base Consultarq
-        $datos = mysqli_query($conn,$consulta); //Recibir la consulta
-
-        mysqli_close($conn);
-        return $datos;
+            mysqli_close($conn);
+            return $datos;
+        }
     }
 
     function guardarDatos($consulta){

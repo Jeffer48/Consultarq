@@ -237,7 +237,6 @@
    
         $textareas = array();
             //Imprimiendo
-           
         for($i = 0; $i < count($servicio); $i++){
             $lista = explode("/",$descripción[$i]);
             $textos = $textarea[$i];

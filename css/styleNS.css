@@ -36,6 +36,13 @@ ul.OurServices {
     display: block;
     margin: auto;
 }
+.NServicio ul {
+    align-items: center;
+    padding: 0px;
+}
+.NServicio li {
+    list-style: square;
+}
 
 @media screen and (max-width: 600px) {
     body {

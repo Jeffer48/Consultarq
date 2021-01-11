@@ -27,20 +27,27 @@
                     $datos = solicitarDatos($consulta);
                     
                     $servicios = array();
-                    $textos = array();
+                    $puntos = array();
                     $imagenes = array();
 
                     while($fila = mysqli_fetch_array($datos)){
                         array_push($servicios,$fila['servicio']);
-                        array_push($textos,$fila['descripción']);
+                        array_push($puntos,$fila['descripción']);
                         array_push($imagenes,$fila['imagen']);
                     }
                     
                     for($i = 0; $i < count($servicios); $i++){
+                        $lista = explode("/",$puntos[$i]);
+                        $textos = "";
+                        
+                         for($c = 0; $c < count($lista); $c++){
+                            $textos = $textos.'<li>'.$lista[$c].'</li>';
+                        }
+                        
                         $estructura = '<li class="NServicio">
                                 <img class="NSImg" src="data:image/png;base64,' .  base64_encode($imagenes[$i])  . '" alt="'.$servicios[$i].'">
-                                <h4>'.$servicios[$i].'</h4>'.$textos[$i].'
-                            </li>';
+                                <h4>'.$servicios[$i].'</h4>'.'<ul>'.$textos.'</ul>'.'
+                                </li>';
 
                         echo $estructura;
                     }

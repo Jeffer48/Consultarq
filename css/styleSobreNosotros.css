@@ -6,6 +6,14 @@
 
 body {
     background-color: #000f27 !important;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 main h1#Titulo {
@@ -23,50 +31,48 @@ main div#capa1 {
     position: absolute;
     z-index: 1;
     /*separacion del la parte superior de la pagina al contenedor de los textos*/
-    top: 330px;
+    margin-top: 27px;
     /*separacion del la parte izquierda de la pagina al contenedor de los textos*/
-    left: 50%;
-    display: flex;
+    margin-left: 50%;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     /*tamano del contenedor*/
-    width: 40%;
+    width: 41%;
     height: 80%;
 }
 
-main div#capa1 p,
-main div#capa1 h4 {
+main div#capa1 div p,
+main div#capa1 div h4 {
     color: white;
-}
-
-main div#capa1 h4#TituloMision {
     margin: 0%;
-    font-size: 99%;
 }
 
-main div#capa1 h4#TituloValores {
-    margin: 13% 0% 0% 0%;
-    font-size: 99%;
+main div#capa1 div p {
+    font-size: 94%;
 }
 
-main div#capa1 h4#TituloVision {
-    margin: 28% 0% 0% 0%;
-    font-size: 99%;
+main div#capa1 div h4 {
+    text-align: center;
+    font-size: 140%;
 }
 
-main div#capa1 p {
-    font-size: 79%;
-    text-align: justify;
+main div#capa1 div#TituloMision {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 52px;
 }
 
-main figure#capa2 {
-    position: absolute;
-    z-index: 0;
+main div#capa1 div#TituloValores {
+    margin-bottom: 150px;
 }
 
+main figure#capa2,
 main figure#capa3 {
     position: absolute;
     z-index: 0;
+    width: 100%;
+    height: 800px;
 }
 
 main figure#capa2 img#mapa,
@@ -75,129 +81,68 @@ main figure#capa3 img#diagrama {
     height: 800px;
 }
 
-@media screen and (max-width: 1253px) {
-    main div#capa1 {
-        top: 380px;
+@media screen and (max-width: 1667px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 110px;
     }
-    main div#capa1 h4#TituloMision {
-        font-size: 115%;
+}
+
+@media screen and (max-width: 1550px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 90px;
     }
-    main div#capa1 h4#TituloValores {
-        margin: 20% 0% 0% 0%;
-        font-size: 115%;
+}
+
+@media screen and (max-width: 1500px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 70px;
     }
-    main div#capa1 h4#TituloVision {
-        margin: 30% 0% 0% 0%;
-        font-size: 115%;
+}
+
+@media screen and (max-width: 1298px) {
+    main div#capa1 div h4 {
+        font-size: 135%;
     }
-    main div#capa1 p {
-        font-size: 70%;
+    main div#capa1 div p {
+        font-size: 80%;
+    }
+    main div#capa1 div#TituloValores {
+        margin-bottom: 105px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 85px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    main div#capa1 div h4 {
+        font-size: 125%;
+    }
+    main div#capa1 div p {
+        font-size: 75%;
+    }
+    main div#capa1 div#TituloValores {
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 100px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    main div#capa1 {
-        top: 310px;
-    }
-    main div#capa1 h4#TituloMision {
-        font-size: 105%;
-    }
-    main div#capa1 h4#TituloValores {
-        margin: 30% 0% 0% 0%;
-        font-size: 105%;
-    }
-    main div#capa1 h4#TituloVision {
-        margin: 40% 0% 0% 0%;
-        font-size: 105%;
-    }
-    main div#capa1 p {
-        font-size: 60%;
-    }
-}
-
-@media screen and (max-width: 799px) {
-    main h1#Titulo {
-        font-size: 210%;
-    }
-    main div#capa1 {
-        top: 190px;
-    }
-    main div#capa1 h4#TituloMision {
-        margin: 0%;
-        font-size: 95%;
-    }
-    main div#capa1 h4#TituloValores {
-        margin: 28% 0% 0% 0%;
-        font-size: 95%;
-    }
-    main div#capa1 h4#TituloVision {
-        margin: 50% 0% 0% 0%;
-        font-size: 95%;
-    }
-    main div#capa1 p {
-        font-size: 58%;
-    }
-}
-
-@media screen and (max-width: 505px) {
-    main h1#Titulo {
-        font-size: 210%;
-    }
-    main div#capa1 {
-        top: 180px;
-    }
-    main div#capa1 h4#TituloMision {
-        margin: 0%;
-        font-size: 90%;
-    }
-    main div#capa1 h4#TituloValores {
-        margin: 45% 0% 0% 0%;
-        font-size: 90%;
-    }
-    main div#capa1 h4#TituloVision {
-        margin: 65% 0% 0% 0%;
-        font-size: 90%;
-    }
-    main div#capa1 p {
-        font-size: 46%;
-    }
-}
-
-
-/*vista en telefonos*/
-
-@media screen and (max-width: 334px) {
-    main h1#Titulo {
-        font-size: 170%;
-    }
-    main div#capa1 {
-        top: 165px;
-    }
-    main div#capa1 h4#TituloMision {
-        margin: 0%;
-        font-size: 60%;
-    }
-    main div#capa1 h4#TituloValores {
-        margin: 70% 0% 0% 0%;
-        font-size: 60%;
-    }
-    main div#capa1 h4#TituloVision {
-        margin: 100% 0% 0% 0%;
-        font-size: 60%;
-    }
-    main div#capa1 p {
-        font-size: 40%;
-    }
-}
-
-@media screen and (max-width: 316px) {
-    main div#capa1 {
-        top: 202px;
-    }
-    main div#capa1 h4#TituloValores {
-        margin: 76% 0% 0% 0%;
-    }
-    main div#capa1 h4#TituloVision {
-        margin: 101% 0% 0% 0%;
+    main div#capa1 div#TituloValores {
+        margin-bottom: 100px;
     }
 }

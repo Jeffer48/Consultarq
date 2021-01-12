@@ -14,6 +14,14 @@
 
 <body>
     <?php include 'header.php' ?>
+    
+    <script>
+        (function (){
+            let dir = document.getElementById("nuestrosExpertos");
+
+            dir.className = "nav-item active";
+        })();
+    </script>
 
     <main>
         <h1 id="Titulo">NUESTROS EXPERTOS</h1>

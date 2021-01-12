@@ -94,6 +94,14 @@ if(isset($_POST['submit'])){
 
 <body>
     <?php include 'header.php' ?>
+    
+    <script>
+        (function (){
+            let dir = document.getElementById("contacto");
+
+            dir.className = "nav-item active";
+        })();
+    </script>
 
     <main>
         <section class="texto">

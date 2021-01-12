@@ -22,7 +22,7 @@ ul.OurServices {
 
 .NServicio {
     color: white; 
-    padding: 50px;
+    padding: 30px;
     border: 10px;
     text-align: justify;
 }
@@ -69,6 +69,7 @@ ul.OurServices {
 
     section.OurServicesSection {
         top: 14.5%;
+        
     }
 
     /*  section.OurServicesSection {

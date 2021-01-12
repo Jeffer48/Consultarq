@@ -11,12 +11,7 @@
     $nombreBD = "consultarq";*/
 
     $dir = "localhost";
-<<<<<<< HEAD
-
     $user = "consultarq";
-=======
-    $user = "Consultarq";
->>>>>>> 2ff4088d45266112b34133dc255b49954a6c08d3
     $pass = "1234";
     $nombreBD = "consultarq";
     

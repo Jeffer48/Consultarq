@@ -125,7 +125,7 @@ if(isset($_POST['submit'])){
                 <li class="msg"><textarea id="msg" name="msg" placeholder="Mensaje" style="height: 100%" value="<?php echo htmlspecialchars($msg); ?>"></textarea>
                 <div class="text-danger" id="colorValidacion"><?php echo $errores['msgError']; ?></div>
                 </li>
-                <li class="submitLi"><input type="submit" name="submit" value="enviar" class="boton"></li>
+                <li class="submitLi"><input type="submit" name="submit" value="Enviar" class="boton"></li>
             </ul>
         </form>
     </main>

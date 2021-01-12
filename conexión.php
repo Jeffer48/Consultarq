@@ -10,6 +10,11 @@
     $pass = "Cc5-Coms.97";
     $nombreBD = "consultarq";*/
 
+    $dir = "localhost";
+    $user = "Consultarq";
+    $pass = "1234";
+    $nombreBD = "consultarq";
+    
     function solicitarDatos($consulta){
         global $dir, $user, $pass, $nombreBD;
 

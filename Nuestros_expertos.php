@@ -27,21 +27,21 @@
         <h1 id="Titulo">NUESTROS EXPERTOS</h1>
 
 
-        <section id="IngenieroCivil">
+        <section id="IngenieroCivil" >
             <h3>INGENIERO/A CIVIL</h3>
-            <p>
-                Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
+            <p >
+            Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
             </p>
         </section>
 
-        <section id="IngenieriaEstructural">
+        <section id="IngenieriaEstructural" >
             <h3>INGENIERO/A ESTRUCTURAL</h3>
             <p>
                 Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
             </p>
         </section>
 
-        <section id="Arquitecto">
+        <section id="Arquitecto" >
             <h3>ARQUITECTO/A</h3>
             <p>
                 Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!

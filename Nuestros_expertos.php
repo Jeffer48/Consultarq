@@ -21,21 +21,21 @@
 
         <section id="IngenieroCivil" >
             <h3>INGENIERO/A CIVIL</h3>
-            <p id="textocivil">
+            <p >
             Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
             </p>
         </section>
 
         <section id="IngenieriaEstructural" >
             <h3>INGENIERO/A ESTRUCTURAL</h3>
-            <p class="texto-estructural">
+            <p>
                 Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
             </p>
         </section>
 
         <section id="Arquitecto" >
             <h3>ARQUITECTO/A</h3>
-            <p class="texto-arquitecto">
+            <p>
                 Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
             </p>
         </section>

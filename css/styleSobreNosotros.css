@@ -34,9 +34,6 @@ main div#capa1 {
     margin-top: 27px;
     /*separacion del la parte izquierda de la pagina al contenedor de los textos*/
     margin-left: 50%;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
     /*tamano del contenedor*/
     width: 41%;
     height: 80%;
@@ -48,13 +45,13 @@ main div#capa1 div h4 {
     margin: 0%;
 }
 
-main div#capa1 div p {
-    font-size: 94%;
-}
-
 main div#capa1 div h4 {
     text-align: center;
     font-size: 140%;
+}
+
+main div#capa1 div p {
+    font-size: 94%;
 }
 
 main div#capa1 div#TituloMision {
@@ -64,7 +61,14 @@ main div#capa1 div#TituloMision {
 }
 
 main div#capa1 div#TituloValores {
-    margin-bottom: 150px;
+    width: 100%;
+    height: 308px;
+    margin-bottom: 48px;
+}
+
+main div#capa1 div#TituloVision {
+    width: 100%;
+    height: 157px;
 }
 
 main figure#capa2,
@@ -81,18 +85,335 @@ main figure#capa3 img#diagrama {
     height: 800px;
 }
 
-@media screen and (max-width: 1667px) {
-    main div#capa1 div#TituloValores {
-        margin-bottom: 110px;
+
+/*
+28,26,24,22,20,18,16,14,12,10,8,6,4,2,1
+*/
+
+@media screen and (max-width: 1400px) {
+    main h1#Titulo {
+        font-size: 380%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 26px;
+    }
+    main div#capa1 div p {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 1550px) {
-    main div#capa1 div#TituloValores {
-        margin-bottom: 90px;
+@media screen and (max-width: 1230px) {
+    main h1#Titulo {
+        font-size: 360%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 26px;
+    }
+    main div#capa1 div p {
+        font-size: 13px;
     }
 }
 
+@media screen and (max-width: 1050px) {
+    main h1#Titulo {
+        font-size: 340%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 25px;
+    }
+    main div#capa1 div p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    main h1#Titulo {
+        font-size: 320%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 24px;
+    }
+    main div#capa1 div p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    main h1#Titulo {
+        font-size: 300%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 23px;
+    }
+    main div#capa1 div p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main h1#Titulo {
+        font-size: 280%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 21px;
+    }
+    main div#capa1 div p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    main h1#Titulo {
+        font-size: 260%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 19px;
+    }
+    main div#capa1 div p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    main h1#Titulo {
+        font-size: 240%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 18px;
+    }
+    main div#capa1 div p {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main h1#Titulo {
+        font-size: 220%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 16px;
+    }
+    main div#capa1 div p {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 234px) {
+    main h1#Titulo {
+        font-size: 200%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 14px;
+    }
+    main div#capa1 div p {
+        font-size: 5px;
+    }
+}
+
+
+/*
+main h1#Titulo {
+        color: white;
+        font-size: 400%;
+        text-align: center;
+        justify-self: center;
+    }
+@media screen and (max-width: 1298px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 130%;
+    }
+    main div#capa1 div p {
+        font-size: 89%;
+    }
+}
+
+@media screen and (max-width: 1213px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 120%;
+    }
+    main div#capa1 div p {
+        font-size: 84%;
+    }
+}
+
+@media screen and (max-width: 1113px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 110%;
+    }
+    main div#capa1 div p {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 987px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 100%;
+    }
+    main div#capa1 div p {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 783px) {
+    main h1#Titulo {
+        color: white;
+        font-size: 400%;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 95%;
+    }
+    main div#capa1 div p {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 693px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 93%;
+    }
+    main div#capa1 div p {
+        font-size: 65%;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 90%;
+    }
+    main div#capa1 div p {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    main div#capa1 div p {
+        font-size: 56%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 86%;
+    }
+    main div#capa1 div p {
+        font-size: 52%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    main h1#Titulo {
+        color: white;
+        font-size: 300%;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 367px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 83%;
+    }
+    main div#capa1 div p {
+        font-size: 48%;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 82%;
+    }
+    main div#capa1 div p {
+        font-size: 46%;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    main h1#Titulo {
+        color: white;
+        font-size: 250%;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 289px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 80%;
+    }
+    main div#capa1 div p {
+        font-size: 42%;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    main div#capa1 div p {
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    main h1#Titulo {
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 227px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 78%;
+    }
+    main div#capa1 div p {
+        font-size: 37%;
+    }
+}
+
+@media screen and (max-width: 214px) {
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 77%;
+    }
+    main div#capa1 div p {
+        font-size: 35%;
+    }
+}
+
+@media screen and (max-width: 202px) {
+    main div#capa1 div p {
+        font-size: 34%;
+    }
+}
+
+
+/*
 @media screen and (max-width: 1500px) {
     main div#capa1 div#TituloValores {
         margin-bottom: 70px;
@@ -146,3 +467,64 @@ main figure#capa3 img#diagrama {
         margin-bottom: 100px;
     }
 }
+
+@media screen and (max-width: 974px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 851px) {
+    main div#capa1 div h4 {
+        font-size: 110%;
+    }
+    main div#capa1 div p {
+        font-size: 67%;
+    }
+    main div#capa1 div#TituloValores {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 694px) {
+    main div#capa1 div h4 {
+        font-size: 100%;
+    }
+    main div#capa1 div p {
+        font-size: 60%;
+    }
+    main div#capa1 div#TituloValores {
+        margin-bottom: 110px;
+    }
+}
+
+@media screen and (max-width: 674px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    main div#capa1 div#TituloValores {
+        margin-bottom: 80px;
+    }
+}
+*/

@@ -15,6 +15,14 @@
 <body>
     <?php include 'header.php' ?>
     
+    <script>
+        (function (){
+            let dir = document.getElementById("inicio");
+
+            dir.className = "nav-item active";
+        })();
+    </script>
+    
     <main>
         <section class="ServiceSection">
             <ul class="Services">

@@ -6,22 +6,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item" id="inicio">
                         <a class="nav-link" href="index.php">INICIO<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="nuestrosServicios">
                         <a class="nav-link" href="Nuestros_servicios.php">NUESTROS SERVICIOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="sobreNosotros">
                         <a class="nav-link" href="SobreNosotros.php">SOBRE NOSOTROS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="nuestrosExpertos">
                         <a class="nav-link" href="Nuestros_expertos.php">NUESTROS EXPERTOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="faqs">
                         <a class="nav-link" href="FAQs.php">FAQ´S</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="contacto">
                         <a class="nav-link" href="contacto.php">CONTACTO</a>
                     </li>
                 </ul>

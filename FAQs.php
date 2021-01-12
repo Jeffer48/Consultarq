@@ -16,6 +16,14 @@
 
 <body>
     <?php include 'header.php' ?>
+    
+    <script>
+        (function (){
+            let dir = document.getElementById("faqs");
+
+            dir.className = "nav-item active";
+        })();
+    </script>
 
     <main>
         <section class="Preguntas">

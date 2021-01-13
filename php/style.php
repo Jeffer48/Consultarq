@@ -102,7 +102,7 @@ nav a.navbar-brand img#logotipo {
     }
 <?php endif; ?>
 
-<?php if(isset($_POST['guardarInicio']) || isset($_POST['guardarNServicios']) || isset($_POST['guardarSNosotros'])):  ?>
+<?php if(isset($_POST['guardarInicio']) || isset($_POST['guardarNServicios']) || isset($_POST['guardarSNosotros']) || isset($_POST['guardarNExpertos'])):  ?>
     body, html{
         height: 100%;
         width: 100%;

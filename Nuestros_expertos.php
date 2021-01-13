@@ -26,7 +26,48 @@
     <main>
         <h1 id="Titulo">NUESTROS EXPERTOS</h1>
 
-        <section id="IngenieroCivil" >
+        <?php
+           include 'conexión.php';
+            $consulta = "SELECT * FROM nuestrosexpertos";
+            $datos = solicitarDatos($consulta);
+
+            $titulo = array();
+            $texto = array();
+
+            while($fila = mysqli_fetch_array($datos)){
+                array_push($titulo,$fila["titulo"]);
+                array_push($texto,$fila["texto"]);
+            }
+            $textoreparado = array();
+            //Imprimiendo
+            for($i = 0; $i < count($titulo); $i++){
+                $lista = explode("/",$texto[$i]); 
+                $guardarcambios = "";
+
+                for($c = 0; $c < count($lista); $c++){
+                    $guardarcambios = $guardarcambios.''.$lista[$c];
+                }
+                $textoreparado[$i] = $guardarcambios;
+
+            }
+            echo
+           '<section id="IngenieroCivil" >
+                <h3>'.$titulo[0].'</h3>
+                <p >'.$textoreparado[0].'</p>
+            </section>
+
+            <section id="IngenieriaEstructural" >
+                <h3>'.$titulo[1].'</h3>
+                <p>'.$textoreparado[1].'</p>
+            </section>
+
+            <section id="Arquitecto" >
+                <h3>'.$titulo[2].'</h3>
+                <p>'.$textoreparado[2].'</p>
+            </section>';
+        ?>
+
+        <!--<section id="IngenieroCivil" >
             <h3>INGENIERO/A CIVIL</h3>
             <p >
             Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
@@ -45,7 +86,7 @@
             <p>
                 Totam, rerum eius esse sunt molestias a. Sapiente facere, ut at repellat commodi reprehenderit labore tempora et vel ex natus eos odit sunt nulla dolore doloribus nostrum ullam consequatur illum!
             </p>
-        </section>
+        </section>-->
 
     </main>
 

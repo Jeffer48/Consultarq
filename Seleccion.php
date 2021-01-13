@@ -31,6 +31,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Cerrar sesión</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="changePass.php">Cambiar contraseña</a>
+                </li>
           </ul>
          </div>
       </nav>

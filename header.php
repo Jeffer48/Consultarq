@@ -1,7 +1,7 @@
 <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 1">
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="boton" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -24,6 +24,14 @@
                     <li class="nav-item" id="contacto">
                         <a class="nav-link" href="contacto.php">CONTACTO</a>
                     </li>
+                    <li class="nav-item" id="redes" style="visibility: collapse;">
+                        <ul class="redes">
+                            <li><a href="https://www.facebook.com/ConsultArq-101097018429982" target="_blank"><img style="width: 40px; height: 40px;" src="img/Inicio/icono%20face-01.png" alt="Facebook"></li></a>
+                            <li><a href="https://www.instagram.com/consultarq5/" target="_blank"><img style="width: 40px; height: 40px;" src="img/Inicio/icono%20insta-01.png" alt="Instagram"></li></a>
+                            <li><a href="mailto:consultarq.contacto@gmail.com"><img style="width: 40px; height: 40px;" src="img/Inicio/icono%20sobre-01.png" alt="Correo"></li></a>
+                            <li><a href="https://api.whatsapp.com/send?phone=+524436510506" target="_blank"><img style="width: 40px; height: 40px;" src="img/Inicio/icono%20telefono-01.png" alt="Whatsapp"></li></a>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <a class="navbar-brand" href="index.php"><img src="img/Inicio/letras%20logo-04.png" alt="Logo"></a>
@@ -37,3 +45,24 @@
             </div>
         </nav>
     </header>
+
+<script>
+    (function (){
+        let estado = false;
+        let redes = document.getElementById("redes");
+
+        document.getElementById("boton").onclick = function(){
+            console.log("Holi :D");
+
+            if(!estado){
+                redes.style.visibility = "visible";
+
+                estado = true;
+            }else{
+                redes.style.visibility = "collapse";
+
+                estado = false;
+            }
+        }
+    })();
+</script>

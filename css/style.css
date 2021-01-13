@@ -1,64 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-*{
+* {
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+.redes {
+    display: flex;
     margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
 }
 
 header{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
+    min-width: auto;
 }
 
-#Fondo{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
+.redes li {
+    margin-right: 10px;
+}
+
+.nav-link {
+    padding: 0px 1px !important;
     height: 100%;
 }
 
-nav{
+.navbar-nav{
+    vertical-align: bottom;
     display: flex;
-    color: white;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgba(0,0,0,0.5);
-}
-
-ul.paginas{
-    display: flex;
-    margin: 0px;
-    padding: 10px;
     flex-wrap: wrap;
 }
 
-ul.paginas li{
-    margin: 20px;
-    text-align: center;
-    margin: 5px;
-    align-self: center;
-    border-width: 3px;
-    border-right-style: solid;
-    border-color: rgba(0,0,0,0.5);
-    padding-right: 5px;
-    width: 100px;
-    height: 36px;
+@media screen and (min-width: 800px) {
+    .nav-item {
+        border-width: 3px;
+        border-right-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        width: 116px;
+        height: 45px;
+        text-align: center;
+        align-self: center;
+    }
 }
 
-a:-webkit-any-link{
-    text-decoration: none;
-    color: white;
-}
-
-ul.redes{
-    display: flex;
-    align-items:center;
-    place-content: flex-end;
-    margin: 5px;
-    margin-right: 20px;
+@media screen and (max-width: 800px) {
+    .sectionRedes {
+        visibility: collapse;
+        height: 0px;
+    }
 }

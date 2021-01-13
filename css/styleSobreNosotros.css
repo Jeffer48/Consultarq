@@ -5,196 +5,212 @@
 }
 
 body {
-    background-color: #000f27;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-}
-
-
-/*---------------------------------------------------------- NavBar ---------------------------------------------------*/
-
-header {
+    background-color: #000f27 !important;
     width: 100%;
+    height: 100vh;
 }
 
-nav {
-    display: flex;
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+main h1#Titulo {
     color: white;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-ul.paginas a {
-    color: white;
-    text-decoration: none;
-}
-
-ul.paginas {
-    display: flex;
-    margin: 0px;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-ul.paginas li {
-    margin: 20px;
+    font-size: 500%;
     text-align: center;
-    margin: 5px;
-    align-self: center;
-    border-width: 3px;
-    border-right-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
-    padding-right: 5px;
-    width: 100px;
-    height: 36px;
-}
-
-ul.redes {
-    display: flex;
-    align-items: center;
-    place-content: flex-end;
-    margin: 5px;
-    margin-right: 20px;
+    justify-self: center;
 }
 
 
-/*---------------------------------------------------------------------------------------------------------------------*/
+/*el primer div que contiene
+los textos del documento*/
 
-.Vision,
-.Valores,
-.Mision {
+main div#capa1 {
+    position: absolute;
+    z-index: 1;
+    /*separacion del la parte superior de la pagina al contenedor de los textos*/
+    margin-top: 27px;
+    /*separacion del la parte izquierda de la pagina al contenedor de los textos*/
+    margin-left: 50%;
+    /*tamano del contenedor*/
+    width: 41%;
+    height: 80%;
+}
+
+main div#capa1 div p,
+main div#capa1 div h4 {
     color: white;
-    font-size: 100%;
+    margin: 0%;
 }
 
-.Titulo {
-    color: white;
-    font-size: 300%;
+main div#capa1 div h4 {
+    text-align: center;
+    font-size: 140%;
 }
 
-.mapa,
-.diagrama {
+main div#capa1 div p {
+    font-size: 94%;
+}
+
+main div#capa1 div#TituloMision {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 52px;
+}
+
+main div#capa1 div#TituloValores {
+    width: 100%;
+    height: 308px;
+    margin-bottom: 48px;
+}
+
+main div#capa1 div#TituloVision {
+    width: 100%;
+    height: 157px;
+}
+
+main figure#capa2,
+main figure#capa3 {
+    position: absolute;
+    z-index: 0;
     width: 100%;
     height: 800px;
 }
 
-#SobreNosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main figure#capa2 img#mapa,
+main figure#capa3 img#diagrama {
+    width: 100%;
+    height: 800px;
 }
 
-@media screen and (min-width: 1243px) {
-    #capa1 {
-        position: absolute;
-        z-index: 1;
-        top: 250px;
-        left: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        height: 80%;
+@media screen and (max-width: 1400px) {
+    main h1#Titulo {
+        font-size: 380%;
     }
-    #TituloValores {
-        margin: 12% 0% 0% 0%;
-        font-size: 99%;
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 26px;
     }
-    #TituloVision {
-        margin: 28% 0% 0% 0%;
-        font-size: 99%;
-    }
-    #TituloMision {
-        margin: 0%;
-        font-size: 99%;
-    }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
-        font-size: 79%;
+    main div#capa1 div p {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width: 1242px) {
-    #capa1 {
-        position: absolute;
-        z-index: 1;
-        top: 300px;
-        left: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        height: 80%;
+@media screen and (max-width: 1230px) {
+    main h1#Titulo {
+        font-size: 360%;
     }
-    #TituloValores {
-        margin: 30% 0% 0% 0%;
-        font-size: 90%;
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 26px;
     }
-    #TituloVision {
-        margin: 55% 0% 0% 0%;
-        font-size: 90%;
-    }
-    #TituloMision {
-        margin: 0%;
-        font-size: 90%;
-    }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
-        font-size: 60%;
-    }
-    .mapa,
-    .diagrama {
-        width: 100%;
-        height: 800px;
+    main div#capa1 div p {
+        font-size: 13px;
     }
 }
 
-@media screen and (max-width: 760px) {
-    #capa1 {
-        position: absolute;
-        z-index: 1;
-        top: 350px;
-        left: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        height: 80%;
+@media screen and (max-width: 1050px) {
+    main h1#Titulo {
+        font-size: 340%;
     }
-    #TituloValores {
-        margin: 40% 0% 0% 0%;
-        font-size: 80%;
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 25px;
     }
-    #TituloVision {
-        margin: 70% 0% 0% 0%;
-        font-size: 80%;
-    }
-    #TituloMision {
-        margin: 0%;
-        font-size: 80%;
-    }
-    #ParrafoVision,
-    #ParrafoValores,
-    #ParrafoMision {
-        font-size: 50%;
-    }
-    .mapa,
-    .diagrama {
-        width: 100%;
-        height: 800px;
+    main div#capa1 div p {
+        font-size: 12px;
     }
 }
 
-#capa2 {
-    position: absolute;
-    z-index: 0;
+@media screen and (max-width: 870px) {
+    main h1#Titulo {
+        font-size: 320%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 24px;
+    }
+    main div#capa1 div p {
+        font-size: 11px;
+    }
 }
 
-#capa3 {
-    position: absolute;
-    z-index: 0;
+@media screen and (max-width: 710px) {
+    main h1#Titulo {
+        font-size: 300%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 23px;
+    }
+    main div#capa1 div p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main h1#Titulo {
+        font-size: 280%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 21px;
+    }
+    main div#capa1 div p {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    main h1#Titulo {
+        font-size: 260%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 19px;
+    }
+    main div#capa1 div p {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    main h1#Titulo {
+        font-size: 240%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 18px;
+    }
+    main div#capa1 div p {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    main h1#Titulo {
+        font-size: 220%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 16px;
+    }
+    main div#capa1 div p {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width: 234px) {
+    main h1#Titulo {
+        font-size: 200%;
+    }
+    main div#capa1 div h4 {
+        text-align: center;
+        font-size: 14px;
+    }
+    main div#capa1 div p {
+        font-size: 5px;
+    }
 }

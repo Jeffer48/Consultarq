@@ -48,6 +48,21 @@
         } 
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }
+
+    if(isset($_POST['guardarSNosotros'])){
+
+        $search = "-";
+        $replace = "/";
+        $IDC = substr($_POST['Mision'], 1);   $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
+        $GUA = substr($_POST['Valores'],1 );  $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $GUA);
+        $SDO = substr($_POST['Vision'], 1);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $SDO);
+        
+        $consulta = 'UPDATE sobrenosotros SET texto="'.$IDC.'" WHERE id=1;'; guardarDatos($consulta);
+        $consulta = 'UPDATE sobrenosotros SET texto="'.$GUA.'" WHERE id=2;'; guardarDatos($consulta);
+        $consulta = 'UPDATE sobrenosotros SET texto="'.$SDO.'" WHERE id=3;'; guardarDatos($consulta);
+
+        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
+}
 //-Cierres administrativos de contratos de obra.
 /*
 -Consectetur enim nesciunt porro corrupti vel veniam cupiditate vero ipsum expedita optio earum asperiores aliquid quae fuga odio eum dolorem a rem, praesentium doloremque ut, numquam eius ipsa! Illo, repudiandae!

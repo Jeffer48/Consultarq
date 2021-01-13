@@ -43,63 +43,34 @@
             $textoreparado = array();
             //Imprimiendo
             for($i = 0; $i < count($titulo); $i++){
-                $lista = explode("/",$texto[$i]);
+                $lista = explode("/",$texto[$i]); 
                 $guardarcambios = "";
 
                 for($c = 0; $c < count($lista); $c++){
-                    $guardarcambios = $guardarcambios.'<li>'.$lista[$c].'</li>';
+                    if($c == 0 || $c == count($lista)-1)
+                     $guardarcambios = $guardarcambios.''.$lista[$c];
+                    else
+                     $guardarcambios = $guardarcambios.''.$lista[$c].'<br>';
                 }
+                $textoreparado[$i] = $guardarcambios;
+
             }
             echo
             '<div id="capa1">
             <div id="TituloMision">
-                <h4 >MISION</h4>
-                <p>
-                </p>
+                <h4 >'.$titulo[0].'</h4>
+                <p>'.$textoreparado[0].'</p>
             </div>
             <div id="TituloValores">
-                <h4 >VALORES</h4>
-                <p>
-                </p>
+                <h4 >'.$titulo[1].'</h4>
+                <p>'.$textoreparado[1].'</p>
             </div>
             <div id="TituloVision">
-                <h4 >VISION</h4>
-                <p>
-                </p>
+                <h4 >'.$titulo[2].'</h4>
+                <p>'.$textoreparado[2].'</p>
             </div>
             </div>';
-
-                    //cerrarSesion($conn);
-        
         ?>
-        <!--Capa donde se guardan todos los textos-->
-        <!--<div id="capa1">
-        
-            <div id="TituloMision">
-                <h4 >MISION</h4>
-                <p>
-                    Colaborar de forma proactiva en el desarrollo de procesos para administración, control y gestión de proyectos de edificación, en el ámbito público y privado, para satisfacer las necesidades de nuestros clientes antes, durante y después de finalizado el
-                    proyecto, aportando un servicio que proporcione valor y utilidad.
-                </p>
-            </div>
-            
-            <div id="TituloValores">
-                <h4 >VALORES</h4>
-                <p>
-                    Transparencia: En un entorno social donde cada vez es menos frecuente, la transparencia hacia nuestro equipo y hacia nuestros clientes es fundamental para generar la confianza en las relaciones humanas y poder trabajar en conjunto para toma de decisiones.
-                    <br>Honestidad: La obligación de hacer las cosas bien desde la honradez y el respeto a la ética profesional, aportando al cliente un servicio de calidad que proporcione valor y utilidad. <br>Excelencia: capacidad de captar y satisfacer
-                    las expectativas del cliente, mediante accesibilidad y atención personalizada para el logro de las metas propuestas. <br> Innovación: basada en la generación, desarrollo de ideas y soluciones, que faciliten la consecución de elementos
-                    diferenciales competitivos.
-                </p>
-            </div>
-
-            <div id="TituloVision">
-                <h4 >VISION</h4>
-                <p>
-                    Ser una empresa líder y lograr que nuestros clientes optimicen tiempo y costo, con sus proyectos en nuestras manos.
-                </p>
-            </div>
-        </div>-->
         <!--imagen de fondo del mapa del mundo-->
         <figure id="capa2">
             <img id="mapa" src="img/SobreNostros/mapa-SN.png" alt="">

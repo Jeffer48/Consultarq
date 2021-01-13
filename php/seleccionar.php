@@ -148,9 +148,9 @@
         }
 
         $textarea = array(
-            '<textarea name="Mision" cols="30" rows="10">',
-            '<textarea name="Valores" cols="30" rows="10">',
-            '<textarea name="Vision" cols="30" jrpws="10">'
+            '<textarea name="Mision" cols="30" rows="10" maxlength="320">',
+            '<textarea name="Valores" cols="30" rows="10" maxlength="745">',
+            '<textarea name="Vision" cols="30" jrpws="10" maxlength="320">'
            );
         $textareas = array();
         //Imprimiendo
@@ -159,6 +159,9 @@
             $textos = $textarea[$i];
 
             for($c = 0; $c < count($lista); $c++){
+                if($c == 0)
+                $textos = $textos.''.$lista[$c]."\n";
+                else
                 $textos = $textos.'-'.$lista[$c]."\n";
             }
             $textos = $textos.'</textarea>';

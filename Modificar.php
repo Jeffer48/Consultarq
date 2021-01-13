@@ -99,6 +99,7 @@
           if(isset($_POST['guardarInicio'])){Inicio();}
           if(isset($_POST['guardarNServicios'])){NServicios();}
           if(isset($_POST['guardarSNosotros'])){guardarSNosotros();}
+          if(isset($_POST['guardarNExpertos'])){NExpertos();}
        ?>
    </main>
 </body>

@@ -64,12 +64,10 @@
         echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
     }
     
-    if(isset($_POST['guardarSExpertos'])){
-        $search = "-";
-        $replace = "/";
-        $IDC = substr($_POST['ingeniero'], 0);  $IDC = str_replace($search, $replace, $IDC); $IDC = str_replace("\n", "", $IDC);
-        $GUA = substr($_POST['arquitecto'],0);  $GUA = str_replace($search, $replace, $GUA); $GUA = str_replace("\n", "", $GUA);
-        $SDO = substr($_POST['expertos'], 0);   $SDO = str_replace($search, $replace, $SDO); $SDO = str_replace("\n", "", $SDO);
+    if(isset($_POST['guardarNExpertos'])){
+        $IDC = $_POST['ingeniero']; 
+        $GUA = $_POST['arquitecto'];
+        $SDO = $_POST['expertos'];
         
         $consulta = 'UPDATE nuestrosexpertos SET texto="'.$IDC.'" WHERE id=1;'; guardarDatos($consulta);
         $consulta = 'UPDATE nuestrosexpertos SET texto="'.$GUA.'" WHERE id=2;'; guardarDatos($consulta);

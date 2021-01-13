@@ -369,9 +369,9 @@
         }
 
         $textarea = array(
-            '<textarea name="Mision" cols="30" rows="10" maxlength="320">',
-            '<textarea name="Valores" cols="30" rows="10" maxlength="745">',
-            '<textarea name="Vision" cols="30" jrpws="10" maxlength="320">'
+            '<textarea name="ingeniero" cols="30" rows="10" maxlength="320">',
+            '<textarea name="arquitecto" cols="30" rows="10" maxlength="745">',
+            '<textarea name="expertos" cols="30" jrpws="10" maxlength="320">'
            );
         $textareas = array();
         //Imprimiendo

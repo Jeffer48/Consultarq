@@ -15,6 +15,14 @@
     $pass = "1234";
     $nombreBD = "consultarq";
 */
+<<<<<<< HEAD
+    $dir = "localhost";
+    $user = "consultarq";
+    $pass = "1234";
+    $nombreBD = "consultarq";
+
+=======
+>>>>>>> dca8e5e7b0510f24833b0f5281aa95fa675d603c
     function solicitarDatos($consulta){
         global $dir, $user, $pass, $nombreBD;
 

@@ -61,7 +61,7 @@
         $consulta = 'UPDATE sobrenosotros SET texto="'.$GUA.'" WHERE id=2;'; guardarDatos($consulta);
         $consulta = 'UPDATE sobrenosotros SET texto="'.$SDO.'" WHERE id=3;'; guardarDatos($consulta);
 
-        echo '<script type="text/javascript">alert(1);</script>';
+        echo "<script type='text/javascript'>alert('Valores actualizados correctamente');</script>";
 }
 //-Cierres administrativos de contratos de obra.
 /*

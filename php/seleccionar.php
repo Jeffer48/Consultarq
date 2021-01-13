@@ -86,6 +86,51 @@
     }
     if(isset($_POST['NExpertos'])){
         echo '<iframe src="Nuestros_expertos.php" frameborder="0"></iframe>';
+        $consulta = "SELECT titulo, texto FROM nuestrosexpertos";
+        $datos = solicitarDatos($consulta);
+
+        $titulo = array();
+        $texto = array();
+
+        while($fila = mysqli_fetch_array($datos)){
+            array_push($titulo,$fila["titulo"]);
+            array_push($texto,$fila["texto"]);
+        }
+
+        $textarea = array(
+            '<textarea name="ingeniero" cols="30" rows="10" maxlength="320">',
+            '<textarea name="arquitecto" cols="30" rows="10" maxlength="745">',
+            '<textarea name="expertos" cols="30" jrpws="10" maxlength="320">'
+           );
+        $textareas = array();
+        //Imprimiendo
+        for($i = 0; $i < count($titulo); $i++){
+            $lista = explode("/",$texto[$i]); 
+            $textos = $textarea[$i];
+
+            for($c = 0; $c < count($lista); $c++){
+                if($c == 0)
+                $textos = $textos.''.$lista[$c]."\n";
+                else
+                $textos = $textos.'-'.$lista[$c]."\n";
+            }
+            $textos = $textos.'</textarea>';
+            array_push($textareas,$textos);
+        }
+
+           $variable = 
+         '<form action="Modificar.php" method="POST">
+             <label>'.$titulo[0].'</label>'
+             .$textareas[0].
+             '<label>'.$titulo[1].'</label>'
+             .$textareas[1].
+             '<label>'.$titulo[2].'</label>'
+             .$textareas[2].
+             '<div class="center">
+                <input type="submit" name="guardarNExpertos" value="Guardar" class="btn brand z-depth-0">
+             </div>
+          </form>';
+           echo $variable;
     }
     if(isset($_POST['NServicios'])){
         echo '<iframe src="Nuestros_servicios.php" frameborder="0"></iframe>';
@@ -308,6 +353,55 @@
           </div>
        </form>';
         echo $variable;
+    }
+
+    function NExpertos(){
+        echo '<iframe src="Nuestros_expertos.php" frameborder="0"></iframe>';
+        $consulta = "SELECT titulo, texto FROM nuestrosexpertos";
+        $datos = solicitarDatos($consulta);
+
+        $titulo = array();
+        $texto = array();
+
+        while($fila = mysqli_fetch_array($datos)){
+            array_push($titulo,$fila["titulo"]);
+            array_push($texto,$fila["texto"]);
+        }
+
+        $textarea = array(
+            '<textarea name="Mision" cols="30" rows="10" maxlength="320">',
+            '<textarea name="Valores" cols="30" rows="10" maxlength="745">',
+            '<textarea name="Vision" cols="30" jrpws="10" maxlength="320">'
+           );
+        $textareas = array();
+        //Imprimiendo
+        for($i = 0; $i < count($titulo); $i++){
+            $lista = explode("/",$texto[$i]); 
+            $textos = $textarea[$i];
+
+            for($c = 0; $c < count($lista); $c++){
+                if($c == 0)
+                $textos = $textos.''.$lista[$c]."\n";
+                else
+                $textos = $textos.'-'.$lista[$c]."\n";
+            }
+            $textos = $textos.'</textarea>';
+            array_push($textareas,$textos);
+        }
+
+           $variable = 
+         '<form action="Modificar.php" method="POST">
+             <label>'.$titulo[0].'</label>'
+             .$textareas[0].
+             '<label>'.$titulo[1].'</label>'
+             .$textareas[1].
+             '<label>'.$titulo[2].'</label>'
+             .$textareas[2].
+             '<div class="center">
+                <input type="submit" name="guardarNExpertos" value="Guardar" class="btn brand z-depth-0">
+             </div>
+          </form>';
+           echo $variable;
     }
 
     function guardarSNosotros(){

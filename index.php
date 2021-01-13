@@ -49,7 +49,7 @@
                             $textos = $textos.'<li>'.$lista[$c].'</li>';
                         }
 
-                        echo '<li class="ServiciosRes">'.'<h2>'.$servicio[$i].'</h2>'.'<ul>'.$textos.'</ul>'.'<a class="verMas" href="Nuestros_servicios.html">ver más</a>'.'</li>';
+                        echo '<li class="ServiciosRes">'.'<h2>'.$servicio[$i].'</h2>'.'<ul>'.$textos.'</ul>'.'<a class="verMas" href="Nuestros_servicios.php">ver más</a>'.'</li>';
                     }
 
                     //cerrarSesion($conn);

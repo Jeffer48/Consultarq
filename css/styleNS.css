@@ -21,12 +21,14 @@ ul.OurServices {
     flex-wrap: wrap;
 }
 .NServicio {
+    box-sizing: border-box;
     color: white; 
     padding: 100px;
     border: 10px;
     text-align: justify;
-    min-width: 400px;
+    min-width: 360px;
     max-width: 800px;
+    padding: 30px;
 }
 
 .NServicio h4 {
@@ -53,7 +55,7 @@ ul.OurServices {
         background-attachment: fixed;
     }
     .NServicio{
-        padding: 30px;
+        
     }
 }
 

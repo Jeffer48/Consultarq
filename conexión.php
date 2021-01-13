@@ -5,9 +5,15 @@
     $pass = "7fZClODbr5rfrBa1tZDZ";
     $nombreBD = "brtlwkmzk2huu3g0hgoj";
 */
+/*
     $dir = "localhost";
     $user = "consultarq";
     $pass = "1234";
+    $nombreBD = "consultarq";
+*/
+    $dir = "localhost";
+    $user = "admin";
+    $pass = "AdminConsultarq#1";
     $nombreBD = "consultarq";
 
     function solicitarDatos($consulta){

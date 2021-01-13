@@ -12,6 +12,10 @@
     flex-wrap: wrap;
 }
 
+header{
+    min-width: auto;
+}
+
 .redes li {
     margin-right: 10px;
 }

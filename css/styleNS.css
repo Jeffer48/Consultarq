@@ -18,12 +18,15 @@ ul.OurServices {
     padding: 0px;
     animation-duration: 4s;
     animation-name: slideapper;
+    flex-wrap: wrap;
 }
 .NServicio {
     color: white; 
     padding: 100px;
     border: 10px;
     text-align: justify;
+    min-width: 400px;
+    max-width: 800px;
 }
 
 .NServicio h4 {

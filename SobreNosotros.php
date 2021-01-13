@@ -28,9 +28,52 @@
         <!--Titulo de Sobre Nosotros<div id="SobreNosotros"></div>-->
         <h1 id="Titulo">SOBRE NOSOTROS</h1>
 
+        <?php
+           include 'conexión.php';
+            $consulta = "SELECT * FROM sobrenosotros";
+            $datos = solicitarDatos($consulta);
 
+            $titulo = array();
+            $texto = array();
+
+            while($fila = mysqli_fetch_array($datos)){
+                array_push($titulo,$fila["titulo"]);
+                array_push($texto,$fila["texto"]);
+            }
+            $textoreparado = array();
+            //Imprimiendo
+            for($i = 0; $i < count($titulo); $i++){
+                $lista = explode("/",$texto[$i]);
+                $guardarcambios = "";
+
+                for($c = 0; $c < count($lista); $c++){
+                    $guardarcambios = $guardarcambios.'<li>'.$lista[$c].'</li>';
+                }
+            }
+            echo
+            '<div id="capa1">
+            <div id="TituloMision">
+                <h4 >MISION</h4>
+                <p>
+                </p>
+            </div>
+            <div id="TituloValores">
+                <h4 >VALORES</h4>
+                <p>
+                </p>
+            </div>
+            <div id="TituloVision">
+                <h4 >VISION</h4>
+                <p>
+                </p>
+            </div>
+            </div>';
+
+                    //cerrarSesion($conn);
+        
+        ?>
         <!--Capa donde se guardan todos los textos-->
-        <div id="capa1">
+        <!--<div id="capa1">
         
             <div id="TituloMision">
                 <h4 >MISION</h4>
@@ -56,7 +99,7 @@
                     Ser una empresa líder y lograr que nuestros clientes optimicen tiempo y costo, con sus proyectos en nuestras manos.
                 </p>
             </div>
-        </div>
+        </div>-->
         <!--imagen de fondo del mapa del mundo-->
         <figure id="capa2">
             <img id="mapa" src="img/SobreNostros/mapa-SN.png" alt="">
@@ -74,7 +117,6 @@
 </html>
 
 <?php
-    include 'conexión.php';
     include 'php/contadorMes.php';
 
     function contador(){

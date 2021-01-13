@@ -26,7 +26,6 @@
     <main>
         <h1 id="Titulo">NUESTROS EXPERTOS</h1>
 
-
         <section id="IngenieroCivil" >
             <h3>INGENIERO/A CIVIL</h3>
             <p >
@@ -70,7 +69,5 @@
         guardarDatos($queryGuardar);
         contadorNExpertos();
     }
-
-    $visitante = contador();
-    echo "Eres el visitante: ".$visitante;
+    contador();
 ?>

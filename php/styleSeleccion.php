@@ -24,7 +24,7 @@ main form#cartas {
     margin: 5%;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 2fr;
+    grid-template-rows: 2fr 2fr;
     grid-gap: 20px 40px;
 }
 

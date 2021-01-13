@@ -7,14 +7,14 @@
 */
     /*$dir = "localhost";
     $user = "adminCA";
-    $pass = "Cc5-Coms.97";
+    $pass = "Coms-Cc5.97";
     $nombreBD = "consultarq";*/
 
-    $dir = "localhost";
+    /*$dir = "localhost";
     $user = "Consultarq";
     $pass = "1234";
-    $nombreBD = "consultarq";
-    
+    $nombreBD = "consultarq";*/
+
     function solicitarDatos($consulta){
         global $dir, $user, $pass, $nombreBD;
 

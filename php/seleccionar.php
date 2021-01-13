@@ -159,9 +159,6 @@
             $textos = $textarea[$i];
 
             for($c = 0; $c < count($lista); $c++){
-                if($c == 0)
-                $textos = $textos.''.$lista[$c];
-                else
                 $textos = $textos.'-'.$lista[$c]."\n";
             }
             $textos = $textos.'</textarea>';

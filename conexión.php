@@ -9,7 +9,12 @@
     $user = "adminCA";
     $pass = "Coms-Cc5.97";
     $nombreBD = "consultarq";*/
-
+/*
+    $dir = "localhost";
+    $user = "consultarq";
+    $pass = "1234";
+    $nombreBD = "consultarq";
+*/
     function solicitarDatos($consulta){
         global $dir, $user, $pass, $nombreBD;
 

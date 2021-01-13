@@ -111,21 +111,21 @@ if(isset($_POST['submit'])){
         <form action="contacto.php" method="post">
             <ul class="form">
                 <li><input type="text" id="name" name="Nombre" placeholder="Nombre" value="<?php echo htmlspecialchars($Nombre); ?>">
-                <div class="red-text"><?php echo $errores['nombreError']; ?></div>
+                <div class="text-danger" id="colorValidacion"><?php echo $errores['nombreError']; ?></div>
                 </li>
                 <li><input type="text" id="categoria" name="categoria" placeholder="Categoria" value="<?php echo htmlspecialchars($categoria); ?>">
-                <div class="red-text"><?php echo $errores['categoriaError']; ?></div>
+                <div class="text-danger" id="colorValidacion"><?php echo $errores['categoriaError']; ?></div>
                 </li>
                 <li><input type="number" id="tel" name="tel" placeholder="Teléfono" value="<?php echo htmlspecialchars($tel); ?>">
-                <div class="red-text"><?php echo $errores['telError']; ?></div>
+                <div class="text-danger" id="colorValidacion"><?php echo $errores['telError']; ?></div>
                 </li>
                 <li><input type="email" id="email" name="email" placeholder="E-mail" value="<?php echo htmlspecialchars($email); ?>">
-                <div class="red-text"><?php echo $errores['emailError']; ?></div>
+                <div class="text-danger" id="colorValidacion"><?php echo $errores['emailError']; ?></div>
                 </li>
                 <li class="msg"><textarea id="msg" name="msg" placeholder="Mensaje" style="height: 100%" value="<?php echo htmlspecialchars($msg); ?>"></textarea>
-                <div class="red-text"><?php echo $errores['msgError']; ?></div>
+                <div class="text-danger" id="colorValidacion"><?php echo $errores['msgError']; ?></div>
                 </li>
-                <li class="submitLi"><input type="submit" name="submit" value="enviar" class="boton"></li>
+                <li class="submitLi"><input type="submit" name="submit" value="Enviar" class="boton"></li>
             </ul>
         </form>
     </main>

@@ -75,6 +75,9 @@ body {
     width: 100%;
     text-align: end;
 }
+.red-text{
+    color: #C81D11;
+}
 
 @media screen and (max-width: 750px) {
     form ul {

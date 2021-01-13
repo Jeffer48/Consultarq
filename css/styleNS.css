@@ -19,10 +19,9 @@ ul.OurServices {
     animation-duration: 4s;
     animation-name: slideapper;
 }
-
 .NServicio {
     color: white; 
-    padding: 50px;
+    padding: 100px;
     border: 10px;
     text-align: justify;
 }
@@ -50,6 +49,9 @@ ul.OurServices {
         background-size: 100% 100vh;
         background-attachment: fixed;
     }
+    .NServicio{
+        padding: 30px;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -69,6 +71,7 @@ ul.OurServices {
 
     section.OurServicesSection {
         top: 14.5%;
+        
     }
 
     /*  section.OurServicesSection {

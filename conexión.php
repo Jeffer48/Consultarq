@@ -12,6 +12,8 @@
 
     /*$dir = "localhost";
     $user = "Consultarq";
+    $dir = "localhost";
+    $user = "consultarq";
     $pass = "1234";
     $nombreBD = "consultarq";*/
 
